@@ -1,9 +1,0 @@
-diff a/src/app/modules/employee/pages/employee-view-one/employee-view-one.component.html b/src/app/modules/employee/pages/employee-view-one/employee-view-one.component.html	(rejected hunks)
-@@ -291,6 +291,7 @@
-         <button nbButton [disabled]="_absentForm.invalid" status="info" (click)="getAbsence()" ngxTranslate="view">عرض</button>
-       </form>
-       <br>
-+      <h3 *ngIf="absenceMessage"><span class="absence_N badge-danger"> {{absenceMessage}} </span></h3>
-   </nb-card-body>
-   <nb-card-footer>
-     

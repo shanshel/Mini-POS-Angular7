@@ -26,82 +26,44 @@ export class MenuItemsService {
     if (role === environment.Role.Operator) {
       this.MENU_ITEMS = [
         {
-          title: getTranslate('statistics') ,
+          title: 'الاحصائيات',
           expanded: false,
           link: '/statistics/operator',
           icon: 'nb-keypad',
         },
         {
-          title: getTranslate('employees') ,
+          title: 'الزبائن',
           expanded: false,
-          link: '/employees',
+          link: '/customer',
           icon: 'nb-person',
         },
         {
-          title:  getTranslate('job_title_short') ,
+          title: 'الفواتير',
           expanded: false,
           link: '/jobtitle',
           icon: 'nb-title',
-        },
-        {
-          title: getTranslate('view_payment_info') ,
-          expanded: false,
-          link: '/payments',
-          icon: 'nb-checkmark-circle'
-        },
-        {
-          title: getTranslate('merits') ,
-          expanded: false,
-          link: '/allowances/view',
-          icon: 'nb-arrow-thin-up'
-        },
-        {
-          title: getTranslate('deductions') ,
-          expanded: false,
-          link: '/deductions/view',
-          icon: 'nb-arrow-thin-down'
-        },
-        {
-          title:getTranslate('calculation_of_salaries') ,
-          expanded: false,
-          icon: 'nb-compose',
-          link: '/payments/calculate-payment',
         }
-
       ];
     }
     else if (role === environment.Role.Admin) {
       this.MENU_ITEMS = [
         {
-          title:getTranslate('statistics'),
+          title: 'الاحصائيات',
           expanded: false,
-          link: '/statistics/admin',
-          icon: 'nb-bar-chart',
+          link: '/statistics/operator',
+          icon: 'nb-keypad',
         },
         {
-          title: getTranslate('users') ,
+          title: 'الزبائن',
           expanded: false,
+          link: '/customer',
           icon: 'nb-person',
-          link: '/users',
         },
         {
-          title : getTranslate('circuits') ,
+          title: 'الفواتير',
           expanded: false,
-          icon: 'nb-home',
-          link: '/departments',
-        },
-
-        {
-          title: getTranslate('view_payment'),
-          expanded: false,
-          link: '/payments',
-          icon: 'nb-compose',
-        },
-        {
-          title:getTranslate('banks'),
-          expanded: false,
-          link: '/bank',
-          icon: 'nb-layout-centre',
+          link: '/jobtitle',
+          icon: 'nb-title',
         }
       ];
     }
@@ -109,25 +71,23 @@ export class MenuItemsService {
     else if (role === environment.Role.Accountant) {
       this.MENU_ITEMS = [
         {
-          title: getTranslate('statistics'),
+          title: 'الاحصائيات',
           expanded: false,
-          link: '/statistics/accountant',
+          link: '/statistics/operator',
           icon: 'nb-keypad',
         },
         {
-          title: getTranslate('employees') ,
+          title: 'الزبائن',
           expanded: false,
-          link: '/employees',
+          link: '/customer',
           icon: 'nb-person',
         },
-
         {
-          title: getTranslate('view_payment_info'),
+          title: 'الفواتير',
           expanded: false,
-          link: '/payments',
-          icon: 'nb-checkmark-circle',
-        },
-
+          link: '/jobtitle',
+          icon: 'nb-title',
+        }
 
 
       ];

@@ -3,7 +3,7 @@
      [class.right]="position === 'inverse'">
   <div class="logo-containter">
     <a (click)="toggleSidebar()" href="#" class="navigation"><i class="nb-menu"></i></a>
-    <div class="logo" (click)="goToHome()"><span ngxTranslate="employ_system">نظام الموظفين</span></div>
+    <div class="logo" (click)="goToHome()"><span>ادارة المحلات</span></div>
   </div>
 </div>
 
@@ -15,10 +15,6 @@
     <nb-action *nbIsGranted="['view', 'user']" >
       <nb-user [name]="user?.name" title="" [nbContextMenu]="userMenu">
       </nb-user>
-    </nb-action>
-
-    <nb-action *nbIsGranted="['view', 'user']" class="control-item" >
-        <nb-user  [name]="'اللغة'" [nbContextMenu]="langaugeList" [name]="language" [picture]="'assets/images/earth.png'"></nb-user>
     </nb-action>
 
   </nb-actions>

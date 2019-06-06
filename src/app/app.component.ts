@@ -34,12 +34,12 @@ export class AppComponent implements OnInit {
     this.analytics.trackPageViews();
     this.directionService.setDirection(this.directions.RTL);
     
-
+    
     this._authService.onTokenChange()
     .subscribe((token: NbAuthJWTToken) => {
-
+      
       if (token.isValid()) {
-     
+        
         this._appToken.setTokenData(token);
         this._menuItems.buildMenu(token.getPayload().FeRole);
 
@@ -51,6 +51,7 @@ export class AppComponent implements OnInit {
          
         } 
         else {
+          
           console.log("i will go to login");
           this._appToken.setNoToken();
           setTimeout(() => {

@@ -1,4 +1,4 @@
-<h1 id="title" class="title" ngxTranslate="log_in" >تسجيل الدخول</h1>
+<h1 id="title" class="title" >تسجيل الدخول</h1>
 
 <nb-alert *ngIf="showMessages.error && errors?.length && !submitted" outline="danger" role="alert">
   <p class="alert-title" ><b>Oh snap!</b></p>
@@ -17,7 +17,7 @@
 <form (ngSubmit)="login()" #form="ngForm" aria-labelledby="title">
 
   <div class="form-control-group">
-    <label class="label" for="input-login" ngxTranslate="email">الايميل:</label>
+    <label class="label" for="input-login">الايميل:</label>
     <input nbInput
            fullWidth
            [(ngModel)]="user.login"
@@ -31,17 +31,17 @@
            [required]="getConfigValue('forms.validation.email.required')"
            [attr.aria-invalid]="email.invalid && email.touched ? true : null">
     <ng-container *ngIf="email.invalid && email.touched">
-      <p class="error-message" *ngIf="email.errors?.required" ngxTranslate="email_location_reuired">
+      <p class="error-message" *ngIf="email.errors?.required" >
         خانة الايميل مطلوبة!
       </p>
-      <p class="error-message" *ngIf="email.errors?.pattern" ngxTranslate="email_must_be_correct">
+      <p class="error-message" *ngIf="email.errors?.pattern" >
         يجب ان يكون الايميل صحيحاً!
       </p>
     </ng-container>
   </div>
 
   <div class="form-control-group">
-    <label class="label" for="input-password" ngxTranslate="password">كلمة المرور:</label>
+    <label class="label" for="input-password">كلمة المرور:</label>
     <input nbInput
            fullWidth
            [(ngModel)]="user.password"
@@ -56,10 +56,10 @@
            [maxlength]="getConfigValue('forms.validation.password.maxLength')"
            [attr.aria-invalid]="password.invalid && password.touched ? true : null">
     <ng-container *ngIf="password.invalid && password.touched ">
-      <p class="error-message" *ngIf="password.errors?.required" ngxTranslate="password_location_reuired">
+      <p class="error-message" *ngIf="password.errors?.required">
         خانة كلمة المرور مطلوبة!
       </p>
-      <p class="error-message" *ngIf="password.errors?.minlength || password.errors?.maxlength" ngxTranslate="password_condition">
+      <p class="error-message" *ngIf="password.errors?.minlength || password.errors?.maxlength">
         كلمة المرور يجب ان تحتوي
         من {{ getConfigValue('forms.validation.password.minLength') }}
         الى {{ getConfigValue('forms.validation.password.maxLength') }}
