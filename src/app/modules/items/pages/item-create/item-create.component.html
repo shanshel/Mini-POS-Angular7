@@ -1,20 +1,14 @@
 <nb-card accent="info">
-<nb-card-header>اضافة مصرف جديد</nb-card-header>
+<nb-card-header>اضافة مادة جديدة</nb-card-header>
   <nb-card-body>
     <form [formGroup]="_form" (ngSubmit)="_form.valid && onSubmit()" novalidate>
       <div class="row">
           <div class="input-group col-12 mb-3">
-              <label>اسم الزبون</label>
+              <label>اسم المصرف</label>
               <input type="text" nbInput fullWidth formControlName="name" [status]="_form.controls.name.errors && _form.controls.name.dirty ? 'danger' : ''">
-              <span class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.invalid">اسم الزبون مطلوب</span>
+              <span class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.invalid">اسم المصرف مطلوب</span>
 
           </div>
-
-          <div class="input-group col-12 mb-3">
-            <label>رقم جوال الزبون</label>
-            <input type="text" nbInput fullWidth formControlName="phone" [status]="_form.controls.phone.errors && _form.controls.phone.dirty ? 'danger' : ''">
-            <span class="error-span" *ngIf="_form.controls.phone.touched && _form.controls.phone.invalid">رقم الجوال مطلوب</span>
-        </div>
       </div>
     </form>
 </nb-card-body>

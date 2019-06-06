@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     this.analytics.trackPageViews();
     this.directionService.setDirection(this.directions.RTL);
     
-    
+    /*
     this._authService.onTokenChange()
     .subscribe((token: NbAuthJWTToken) => {
       
@@ -73,6 +73,8 @@ export class AppComponent implements OnInit {
       }
       
     });
+
+    */
   }
 
   checkToken() {

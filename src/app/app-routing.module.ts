@@ -16,7 +16,7 @@ const routes: Routes = [
     path: 'customer',
     pathMatch: 'full',
     loadChildren: 'app/modules/customers/customers.module#CustomersModule',
-    canActivate: [LoggedInGuard],
+    canActivate: [],
   },
  
 ];

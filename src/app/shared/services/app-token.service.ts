@@ -66,7 +66,7 @@ export class AppTokenService {
             this.router.navigate(['/statistics/accountant']);
         }
         else if(role === environment.Role.Admin) {
-            this.router.navigate(['/statistics/admin']);
+            this.router.navigate(['/customer']);
         }
         else if(role === environment.Role.Operator) {
             this.router.navigate(['/statistics/operator']);

@@ -13,7 +13,7 @@ export class CustomerService {
     ) { }
 
   getCustomers(data) {
-    return this.http.get(`${environment.API_BASE + '/'}/Customers/GetCustomers`, {params: data});
+    return this.http.get(`${environment.API_BASE}/Customers/GetCustomers`, {params: data});
   }
   
   getCustomer(id) {
@@ -23,11 +23,11 @@ export class CustomerService {
   }
 
   addCustomer(formData) {
-    return this.http.post(`${environment.API_BASE + '/'}/Customers/AddCustomer`, formData);
+    return this.http.post(`${environment.API_BASE}/Customers/AddCustomer`, formData);
   }
   
-  updateCustomer(formData) {
-    return this.http.post(`${environment.API_BASE + '/'}/Customers/UpdateCustomer`, formData);
+  updateCustomer(formData, id) {
+    return this.http.post(`${environment.API_BASE}/Customers/${id}/UpdateCustomer`, formData);
   }
 
 }
