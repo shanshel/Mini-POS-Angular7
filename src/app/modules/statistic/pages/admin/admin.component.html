@@ -1,0 +1,40 @@
+<div class="page-header"></div>
+<div class="row">
+  <div class="col-4">
+    <nb-card accent="primary">
+        <nb-card-header ngxTranslate="users_number"> عدد المستخدمين  </nb-card-header>
+        <nb-card-body>{{ totalNumOfUser }}</nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-4">
+    <nb-card accent="primary">
+        <nb-card-header ngxTranslate="employs_number"> عدد الموظفين </nb-card-header>
+        <nb-card-body>{{ totalNumOfEmployees }}</nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-4">
+    <nb-card accent="primary">
+        <nb-card-header ngxTranslate="department_numbers"> عدد الاقسام </nb-card-header>
+        <nb-card-body>{{ totalNumOfDepartments }}</nb-card-body>
+    </nb-card>
+  </div>
+  
+  <div class="col-6" *ngFor="let item of banksReport">
+    <ngx-bank-chart [bankObject]="item"></ngx-bank-chart>
+  </div>
+
+  <div class="col-6">
+      <nb-card>
+        <nb-card-header>معلومات</nb-card-header>
+        <nb-card-body>
+            <ngx-charts-bar-vertical
+            [results]="EmployeesPerRole"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel">
+          </ngx-charts-bar-vertical>
+        </nb-card-body>
+      </nb-card>
+  </div>
+  </div>

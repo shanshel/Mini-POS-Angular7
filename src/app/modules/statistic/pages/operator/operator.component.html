@@ -1,0 +1,54 @@
+<div class="page-header"></div>
+<div class="row">
+    
+  <div class="col-4">
+    <nb-card accent="primary">
+        <nb-card-header ngxTranslate="placement_number"> عدد التنسيبات  </nb-card-header>
+        <nb-card-body>{{ totalNumOfUser }}</nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-4">
+    <nb-card accent="primary">
+        <nb-card-header ngxTranslate="employs_number"> عدد الموظفين </nb-card-header>
+        <nb-card-body>{{ totalNumOfEmployees }}</nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-4">
+    <nb-card accent="primary">
+        <nb-card-header ngxTranslate="department_numbers"> عدد الاقسام </nb-card-header>
+        <nb-card-body>{{ totalNumOfDepartments }}</nb-card-body>
+    </nb-card>
+  </div>
+  
+
+  <div class="col-12">
+    <nb-card  class="statistic-card">
+        <nb-card-header class="test"></nb-card-header>
+        <nb-card-body>
+            <ngx-charts-bar-vertical
+            [results]="EmployeesPerRole"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel">
+          </ngx-charts-bar-vertical>
+        </nb-card-body>
+    </nb-card>
+</div>
+
+<div class="col-4" *ngFor="let item of statistics">
+  <nb-card accent="{{item.kind == 1 ? 'secuess' : 'danger'}}">
+      <nb-card-header>{{item.name}}</nb-card-header>
+      <nb-card-body>{{item.totalAmount}}</nb-card-body>
+      <nb-card-footer *ngIf="item.kind == 1"> 
+          <span class="badge badge-success">استحقاق</span>
+      </nb-card-footer>
+      <nb-card-footer *ngIf="item.kind == 2"> 
+          <span class="badge badge-danger">استقطاع</span>
+
+      </nb-card-footer>
+
+  </nb-card>
+</div>
+
+</div>

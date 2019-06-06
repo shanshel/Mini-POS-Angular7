@@ -1,0 +1,319 @@
+<nb-card  class="dialog">
+ <nb-card-header class="card_header" ngxTranslate="edit_employee_title">تعديل موظف </nb-card-header>
+<!-- <nb-card-header accent="info" ngxTranslate="edit_employee_title">تعديل موظف </nb-card-header> -->
+   <nb-card-body>
+   
+    <form [formGroup]="_form" (ngSubmit)="_form.valid && submit()">
+      <div class="row" *ngIf="_form">
+        <!-- </div> -->
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="qi_card_smart_id">QiCard Smart ID</label>
+          <input type="text" nbInput fullWidth readonly formControlName="qiSmartId" [status]="_form.controls.qiSmartId.errors && _form.controls.qiSmartId.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="qi_card_account_number">Qicard Account Number</label>
+          <input type="text" nbInput fullWidth readonly formControlName="qiAccountNumber" [status]="form.qiAccountNumber.errors && form.qiAccountNumber.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="qi_card_number">Qicard Number</label>
+          <input type="text" readonly nbInput fullWidth formControlName="qiCardNumber" [status]="form.qiCardNumber.errors && form.qiCardNumber.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="public_employee_id">ألرقم ألوظيفي</label>
+          <input type="text" readonly nbInput fullWidth formControlName="publicEmployerId" [status]="form.publicEmployerId.errors && form.publicEmployerId.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="public_employee_id">الرقم ألحكومي</label>
+          <input type="text" readonly nbInput fullWidth formControlName="govId" [status]="form.govId.errors && form.govId.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="id_card_number">رقم البطاقه ألموحده</label>
+          <input type="text" readonly nbInput fullWidth formControlName="govCardId" [status]="form.govCardId.errors && form.govCardId.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="gov_family_id">ألرقم العائلي</label>
+          <input type="text" readonly nbInput fullWidth formControlName="govFamilyId" [status]="form.govFamilyId.errors && form.govFamilyId.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="first_name">ألأسم ألأول</label>
+          <input type="text" readonly nbInput fullWidth formControlName="firstName" [status]="form.firstName.errors && form.firstName.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="middle_name">ألأسم ألثاني</label>
+          <input type="text" readonly nbInput fullWidth formControlName="middleName" [status]="form.middleName.errors && form.middleName.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="last_name">ألأسم ألثالث</label>
+          <input type="text" readonly nbInput fullWidth formControlName="lastName" [status]="form.lastName.errors && form.lastName.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="surname">اللقب</label>
+          <input type="text" readonly nbInput fullWidth formControlName="surName" [status]="form.surName.errors && form.surName.dirty ? 'danger' : ''">
+        </div>
+        
+        
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="birthdate">تاريخ الميلاد</label>
+          <input nbInput readonly placeholder="Form Picker" fullWidth [nbDatepicker]="formpicker" formControlName="birthDate">
+          <nb-datepicker #formpicker></nb-datepicker>
+        </div>
+        
+        
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="address">عنوان ألسكن</label>
+          <input type="text" readonly nbInput fullWidth formControlName="address" [status]="form.address.errors && form.address.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="phone_number">رقم ألهاتف</label>
+          <input type="text" readonly nbInput fullWidth formControlName="mobileNo" [status]="form.mobileNo.errors && form.mobileNo.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="email">ألبريد ألألكتروني</label>
+          <input type="text" readonly nbInput fullWidth formControlName="email" [status]="form.email.errors && form.email.dirty ? 'danger' : ''">
+        </div>
+
+        <div class="input-group col-3 mb-3">
+          <label class="w100" ngxTranslate="marital_status">الحالة الزوجية</label>
+     
+            <nb-select class=" w-100" placeholder="من فضلك اختر الحالة الزوجية" formControlName="maritalStatus" selected="{{_form.controls.maritalStatus.value}}">
+              <nb-option value="0"><span ngxTranslate="married">متزوج</span></nb-option>
+              <nb-option value="1"><span ngxTranslate="absolute">مطلق</span></nb-option>
+              <nb-option value="2"><span ngxTranslate="widowed">ارمل</span></nb-option>
+              <nb-option value="3"><span ngxTranslate="unmarried">اعزب</span></nb-option>
+            </nb-select>
+       
+        </div>
+
+        
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="gender">الجنس </label>
+          <nb-select placeholder="من فضلك اختر الحالة الزوجية" class="w-100" outline formControlName="gender" selected="{{_form.controls.gender.value}}">
+            <nb-option value="0"><span ngxTranslate="male">ذكر</span></nb-option>
+            <nb-option value="1"><span ngxTranslate="female">انثى</span></nb-option>
+          </nb-select>
+        </div>
+     
+      
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="full_father_name">أسم ألأب ألكامل</label>
+          <input readonly type="text" nbInput fullWidth formControlName="fatherFullName" [status]="form.fatherFullName.errors && form.fatherFullName.dirty ? 'danger' : ''">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="full_mother_name">أسم ألأم ألكامل</label>
+          <input readonly type="text" nbInput fullWidth formControlName="motherFullName" [status]="form.motherFullName.errors && form.motherFullName.dirty ? 'danger' : ''">
+        </div>
+  
+  
+ 
+       
+      </div>
+    </form>
+      <div class="row">
+          <div class="input-group col-3 mb-3">
+              <label ngxTranslate="nominal_salary">الراتب الاسمي</label>
+              <input readonly type="text" nbInput fullWidth [(ngModel)]="__getBasicSalaryAsync" name="__getBasicSalaryAsync">
+            </div>
+            <div class="input-group col-3 mb-3">
+              <label ngxTranslate="total_salary">الراتب الكلي</label>
+              <input readonly type="text" nbInput fullWidth [(ngModel)]="__getTotalSalaryAsync" name="__getTotalSalaryAsync">
+            </div>
+            <div class="input-group col-3 mb-3">
+              <label ngxTranslate="final_salary">الراتب الصافي</label>
+              <input readonly type="text" nbInput fullWidth [(ngModel)]="__getnetSalaryAsync" name="__getnetSalaryAsync">
+            </div>
+      </div>
+
+
+     <h1 class="dg_label" ngxTranslate="deductions">الاستقطاعات</h1> 
+     <!-- <nb-card-header  class="card_header" ngxTranslate="deductions">الاستقطاعات</nb-card-header > -->
+      <form [formGroup]="_deductionForm">
+        <div class="row">
+            <div class="input-group col-3 mb-3">
+              <label class="w100">
+                <span ngxTranslate="deduction_type"> نوع الاستقطاع </span>
+               
+              </label>
+                <nb-select class="minwidth300 " placeholder="النوع" formControlName="serviceId" (selectedChange)="dedicationSelectChange($event)">
+                  <nb-option *ngFor="let item of __getServices" value="{{item.id}}" >
+                    {{item.name}}
+
+                    <span class="badge badge-danger" *ngIf="item.type == 1">
+                      ثابت
+                    </span>
+                    <span class="badge badge-danger" *ngIf="item.type == 2">
+                      نسبة مؤوية
+                    </span>
+                  </nb-option>
+                </nb-select>
+              </div>
+        
+              <div class="input-group col-3 mb-3">
+                  <label ngxTranslate="date">التاريخ </label>
+                  <input nbInput placeholder="التاريخ" fullWidth [nbDatepicker]="formpicker3" formControlName="date">
+                  <nb-datepicker #formpicker3></nb-datepicker>
+                </div>
+    
+              <div class="input-group col-3 mb-3">
+                  <label ngxTranslate="amount">المبلغ</label>
+                  <input type="text" nbInput fullWidth formControlName="amount" [status]="_deductionForm.controls.amount.errors && _deductionForm.controls.amount.dirty ? 'danger' : ''">
+                  <span class="error-span" *ngIf="_deductionForm.controls.amount.touched && _deductionForm.controls.amount.errors?.range">لا يمكن وضع نسبة مؤوية اكبر من 300%</span>
+
+              </div>
+              <div class="input-group col-2 mb-3">
+                <label>File</label>
+                <input type="file" (change)="onDedicationFileSelect($event)" class="form-control-file">
+              </div>
+              <div class="input-group col-2 mb-3">
+                  <nb-checkbox class="checkboxmark" formControlName="isPermanent" value="_deductionForm.controls.isPermanent.value" (click)="dedicationPermenentClick()" ><span ngxTranslate="permanent_entitlement" > استحقاق دائم</span></nb-checkbox>
+                </div>
+
+              
+              <button class="col-1 btn_size" nbButton [disabled]="_deductionForm.invalid" status="info" (click)="createDeducation()" ngxTranslate="add">اضافة</button>
+
+        </div>
+       
+         
+
+
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" ngxTranslate="deduction">الاستقطاع</th>
+            <th scope="col" ngxTranslate="type">نوع </th>
+            <th scope="col" ngxTranslate="deduction_type">نوع الاستقطاع</th>
+            <th scope="col" ngxTranslate="amount">المبلغ</th>
+     
+            <th scope="col" ngxTranslate="statu">الحالة</th>
+            <th scope="col" ngxTranslate="orders">اوامر</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of __getEmployeeDeductions">
+            <td>{{item.serviceType.name}}</td>
+            <td *ngIf="item.serviceType.type == 1">  <span ngxTranslate="constant" class="badge stylebutton btn-success" >ثابتة</span> </td>
+            <td *ngIf="item.serviceType.type == 2">  <span ngxTranslate="percentage" class="badge stylebutton btn-danger">مئوية</span> </td> 
+
+            <td *ngIf="item.serviceType.kind==1"><span ngxTranslate="governmental" >غير حكومي</span> </td>
+            <td *ngIf="item.serviceType.kind!=1"><span ngxTranslate="non_governmental" > حكومي</span> </td>
+             
+            <td>{{item.amount}}</td>
+            <!-- <td>{{item.serviceType.type}}</td> -->
+      
+
+            <td *ngIf="item.status == 1">  <span ngxTranslate="active" class="badge badge-success">فعال</span> </td>
+            <td *ngIf="item.status != 1">  <span ngxTranslate="not_active" class="badge badge-danger">غير فعال</span> </td>
+          <td>
+                <button class="styledanger" nbButton status="danger" (click)="deleteDeducation(item)" ngxTranslate="delete">حذف</button>
+            </td> 
+            <!-- <td>{{item.status}}</td> -->
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 class="dg_label" ngxTranslate="merits" >ألأستحقاقات</h1>
+
+      <form [formGroup]="_allowanceForm">
+        <div class="row">
+            <div class="input-group col-3 mb-3">
+                <label class="w100">
+                  <span ngxTranslate="type"> النوع </span>
+                  :
+                </label>
+         
+                <nb-select class="minwidth300 " placeholder="النوع" formControlName="allowanceTypeId" (selectedChange)="allowanceSelectChange($event)">
+                  <nb-option *ngFor="let item of __getAllowanceTypes" value="{{item.id}}" >
+                    {{item.name}}
+                    <span class="badge badge-danger" *ngIf="item.type == 1">
+                        ثابت
+                      </span>
+                    <span class="badge badge-danger" *ngIf="item.type == 2">
+                      نسبة مؤوية
+                    </span>
+                  </nb-option>
+            
+                </nb-select>
+              </div>
+              <div class="input-group col-3 mb-3">
+                  <label ngxTranslate="date">التاريخ </label>
+                  <input nbInput placeholder="التاريخ" fullWidth [nbDatepicker]="formpicker2" formControlName="date">
+                  <nb-datepicker #formpicker2></nb-datepicker>
+                </div>
+    
+              <div class="input-group col-3 mb-3">
+                  <label ngxTranslate="amount">المبلغ</label>
+                  <input type="text" nbInput fullWidth formControlName="amount" [status]="_allowanceForm.controls.amount.errors && _allowanceForm.controls.amount.dirty ? 'danger' : ''">
+                  <span class="error-span" *ngIf="_allowanceForm.controls.amount.touched && _allowanceForm.controls.amount.errors?.range">لا يمكن وضع نسبة مؤوية اكبر من 300%</span>
+
+              </div>
+              <div class="input-group col-2 mb-3">
+                <label>File</label>
+                <input type="file" (change)="onAllowanceFileSelect($event)" class="form-control-file">
+              </div>
+
+              <div class="input-group col-2 mb-3">
+                  <nb-checkbox class="checkboxmark" formControlName="isPermanent" value="_allowanceForm.controls.isPermanent.value" (click)="allowancePermenentClick()"> استحقاق دائم</nb-checkbox>
+
+              </div>
+              <button class="col-1 btn_size" nbButton [disabled]="_allowanceForm.invalid" status="info" (click)="createAllowance()" ngxTranslate="add">اضافة</button>
+    
+        </div>
+        </form>
+      
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" ngxTranslate="merits">الاستحقاق</th>
+              <th scope="col" ngxTranslate="type">نوع </th>
+              <th scope="col" ngxTranslate="amount">المبلغ</th>
+              
+              <th scope="col" ngxTranslate="statu">الحالة</th>
+              <th scope="col" ngxTranslate="orders">اوامر</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of __getEmployeeAllowances">
+              <td>{{item.allowanceType.name}}</td>
+              <td *ngIf="item.allowanceType.type == 1">  <span class="badge stylebutton btn-success" ngxTranslate="constant">ثابتة</span> </td>
+              <td *ngIf="item.allowanceType.type == 2">  <span class="badge stylebutton btn-danger" ngxTranslate="percentage">مئوية</span> </td> 
+              <td>{{item.amount}}</td>
+             
+                <!-- <td>{{item.allowanceType.type}}</td> -->
+              <td *ngIf="item.status == 1">  <span class="badge badge-success">فعال</span> </td>
+              <td *ngIf="item.status != 1">  <span class="badge badge-danger">غير فعال</span> </td>
+<!-- <td>{{item.status}}</td> -->
+            <td>
+                <button class="styledanger" nbButton status="danger" (click)="deleteAllowance(item)" ngxTranslate="delete">حذف</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- start absent section -->
+      <h1 class="dg_label" ngxTranslate="absence">الغيابات</h1>
+
+      <form [formGroup]="_absentForm">
+        <div class="row">
+            <label ngxTranslate="day_absence" style="padding-top: 10px;">عدد ايام الغياب </label>
+            <div class="input-group col-6 mb-3">
+                
+                <input type="number" nbInput fullWidth formControlName="numberOfDays" >
+            
+            </div>
+            <div class="col-2 mb-3">
+              <button nbButton [disabled]="_absentForm.invalid" status="info" (click)="getAbsence()" ngxTranslate="view">عرض</button>
+            </div>
+            <div class="col-2 mb-3">
+                <h3 *ngIf="absenceMessage" style="text-align: center;"><span> {{absenceMessage | number}} دينار </span></h3>
+            </div>
+          </div>
+          
+      </form>
+      <br>
+      
+  </nb-card-body>
+  <nb-card-footer>
+    
+    <button nbButton status="danger" (click)="dismiss()" ngxTranslate="close">اغلاق</button>
+ </nb-card-footer>
+</nb-card>

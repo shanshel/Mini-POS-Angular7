@@ -1,0 +1,22 @@
+<nb-card accent="info">
+<nb-card-header ngxTranslate="add_new_bank">اضافة مصرف جديد</nb-card-header>
+  <nb-card-body>
+    <form [formGroup]="_form" (ngSubmit)="_form.valid && onSubmit()" novalidate>
+      <div class="row">
+          <div class="input-group col-12 mb-3">
+              <label ngxTranslate="bank_name">اسم المصرف</label>
+              <input type="text" nbInput fullWidth formControlName="name" [status]="_form.controls.name.errors && _form.controls.name.dirty ? 'danger' : ''">
+              <span ngxTranslate="bank_name_required" class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.invalid">اسم المصرف مطلوب</span>
+
+          </div>
+      </div>
+    </form>
+</nb-card-body>
+  <nb-card-footer>
+
+    <button *ngIf="!item" nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()"  ngxTranslate="add">أضافة</button>
+    <button *ngIf="item" nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()"  ngxTranslate="edit">تعديل</button>
+
+</nb-card-footer>
+</nb-card>
+ 

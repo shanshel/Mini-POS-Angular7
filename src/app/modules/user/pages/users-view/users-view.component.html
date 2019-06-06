@@ -1,0 +1,35 @@
+<div class="page-header"></div>
+<nb-card accent="info" >
+  <nb-card-header>
+    <ng-container ><span ngxTranslate="view_users">عرض المستخدمين</span></ng-container>
+    
+    
+    <div class="float-left">
+        <button class="rafidin-icon-button" nbButton status="info" [routerLink]="[ '/users/create' ]">
+          <i class="nb-plus"></i>
+          <ng-container ><span ngxTranslate="add_new_username">اضافة مستخدم</span></ng-container>
+        </button>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" ngxTranslate="email">الايميل</th>
+            <th scope="col" ngxTranslate="group">المجموعة</th>
+            <th scope="col" ngxTranslate="choise">الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of users">
+            <td>{{item.email}}</td>
+            <td>{{item.role}}</td>
+            <td width="200">
+              <ngx-table-dropdown [options]="tableActions" (onActionSelected)="doAction($event, item)"></ngx-table-dropdown>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ngx-pagination (pageInit)="pageInit($event)" (pageChange)="pageChange($event)" [isEmptyNext]="isPaginationNextEmpty"></ngx-pagination>
+    </nb-card-body>
+</nb-card>

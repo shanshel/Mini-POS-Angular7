@@ -1,0 +1,53 @@
+<nb-card accent="info" class="dialog">
+  <nb-card-header>
+   <ng-container >
+   <span ngxTranslate="enrollments_view_title"> عرض التنسيبات</span>
+   </ng-container>
+    <div class="float-left">
+        <button *ngIf="!viewMode" class="rafidin-icon-button" nbButton status="info" (click)="openCreatedialog()">
+          <i class="nb-plus"></i>
+          <ng-container >
+          <span ngxTranslate="create_enrollment">  اضافة تنسيب</span>
+          </ng-container>
+          
+          
+        </button>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" ngxTranslate="assign_to">تنسيب الى</th>
+            <th scope="col" ngxTranslate="assign_date">تاريخ التنسيب</th>
+            <th scope="col" ngxTranslate="job_grade">الدرجة الوظيفية</th>
+            <th scope="col" ngxTranslate="job_level">الخدمة الوظيفية</th>
+            <th scope="col" ngxTranslate="job_title">العنوان الوظيفي</th>
+            <th scope="col" ngxTranslate="bank">المصرف</th>
+            <th scope="col" ngxTranslate="state">الحالة</th>
+            <th *ngIf="!viewMode" scope="col" ngxTranslate="choise">الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of enrollments">
+            <td>{{item.departmentId.name}}</td>
+            <td>{{item.startDate | date}}</td>
+            <td>{{item.level}}</td>
+            <td>{{item.grade + 1}}</td>
+            <td>{{item.jobTitle}}</td>
+            <td>{{item.bankName}}</td>
+            <!-- <td>{{item.status == 1 ? 'مفعل' : 'غير مفعل'}}</td> -->
+            <td *ngIf="item.status == 1"><span ngxTranslate="active">  مفعل</span></td>
+            <td *ngIf="item.status != 1"><span ngxTranslate="not_active"> غير مفعل</span></td>
+            <td *ngIf="!viewMode" width="200">
+              <ngx-table-dropdown [options]="tableActions" (onActionSelected)="doAction($event, item)"></ngx-table-dropdown>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </nb-card-body>
+    <nb-card-footer>
+      <button nbButton status="danger" (click)="dismiss()" ngxTranslate="close">اغلاق</button>
+   </nb-card-footer>
+
+</nb-card>

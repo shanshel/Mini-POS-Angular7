@@ -1,0 +1,30 @@
+<nb-card accent="info">
+    <nb-card-header ><span ngxTranslate="add_new_merit">اضافة  استحقاق جديد</span></nb-card-header>
+    <nb-card-body>
+      <form [formGroup]="_form">
+        <div class="row">
+  
+          <div class="input-group col-6 mb-3">
+              <label ngxTranslate="merit_name" >اسم الأستحقاق</label>
+              <input type="text" nbInput fullWidth formControlName="name" [status]="_form.controls.name.touched && _form.controls.name.errors ? 'danger' : ''">
+              <span ngxTranslate="merit_name_required" class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.errors" ngxTranslate="merit_name_required">اسم الاستحقاق مطلوب</span>
+
+            </div>
+            <div class="input-group col-6 mb-3">
+                <label ngxTranslate="merit_value">قيمة الأستحقاق</label>
+                <input type="number" nbInput fullWidth formControlName="amount" [status]="_form.controls.amount.touched && _form.controls.amount.errors ? 'danger' : ''">
+                <span ngxTranslate="merit_value_condition" class="error-span" *ngIf="_form.controls.amount.touched && _form.controls.amount.errors" ngxTranslate="merit_value_condition">قيمة الاستحقاق يجب ان تكون اكثر من 0</span>
+
+            </div>
+            <div class="input-group col-6 mb-3">
+                <nb-checkbox formControlName="type">
+                  <span ngxTranslate="percentage">نسبة مئوية </span>
+                </nb-checkbox>
+            </div>
+        </div>
+      </form>
+    </nb-card-body>
+    <nb-card-footer>
+      <button nbButton [disabled]="_form.invalid" (click)="createNewRole()" accent="success" ngxTranslate="add">أضافة</button>
+    </nb-card-footer>
+  </nb-card>

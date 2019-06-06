@@ -1,0 +1,87 @@
+<nb-card accent="info" >
+  <nb-card-header>
+    <ng-container ngxTranslate="ministries_view">
+        عرض الوزارات
+    </ng-container>
+    
+    <div class="float-left">
+        <button class="rafidin-icon-button" nbButton status="info" ngxTranslate="add_ministry">
+          <i class="nb-plus"></i>
+          اضافة وزارة
+        </button>
+
+        <button class="rafidin-icon-button" nbButton status="warning" (click)="accordion.toggle()" ngxTranslate="advance_search">
+            <i class="nb-search"></i>
+            بحث متقدم
+        </button>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+      <nb-accordion>
+        <nb-accordion-item #accitem>
+          <nb-accordion-item-body>
+              <form>
+                  <div class="row">
+              
+                      <div class="input-group col-6 mb-3">
+                          <label ngxTranslate="choose_ministry">اختر الوزارة</label>
+                        <nb-select placeholder="من فضلك اختر الوزارة" class="w-100" outline>
+                            <nb-option value="1">الكل</nb-option>
+                            <nb-option value="2">Option 2</nb-option>
+                            <nb-option value="3">Option 3</nb-option>
+                            <nb-option value="4">Option 4</nb-option>
+                          </nb-select>
+                      </div>
+                      <div class="input-group col-6 mb-3">
+                          <label ngxTranslate="choose_directorate">اختر المديرية</label>
+                        <nb-select placeholder="من فضلك اختر المديرية" class="w-100" outline>
+                            <nb-option value="1">الكل</nb-option>
+                            <nb-option value="2">Option 2</nb-option>
+                            <nb-option value="3">Option 3</nb-option>
+                            <nb-option value="4">Option 4</nb-option>
+                          </nb-select>
+                      </div>
+                    <div class="input-group col-6 mb-3">
+                      <label ngxTranslate="full_name_employ">اسم الموظف الكامل</label>
+                      <input type="text" nbInput fullWidth>
+                    </div>
+                    <div class="input-group col-6 mb-3">
+                      <label ngxTranslate="full_name_mother">اسم الأم الكامل</label>
+                      <input type="text" nbInput fullWidth>
+                    </div>
+                    <div class="input-group col-6 mb-3">
+                      <label ngxTranslate="phone_number">رقم الهاتف</label>
+                      <input type="text" nbInput fullWidth>
+                    </div>
+                    <div class="input-group col-6 mb-3">
+                      <label ngxTranslate="smart_number">الرقم الذكي</label>
+                      <input type="text" nbInput fullWidth>
+                    </div>
+                  </div>
+                </form>
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      </nb-accordion>
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" ngxTranslate="ministry_name">اسم الوزارة</th>
+            <th scope="col" ngxTranslate="ministry_number">رقم الوزارة</th>
+            <th scope="col" ngxTranslate="choise">الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of ministries">
+            <td>{{item.name}}</td>
+            <td>{{item.code}}</td>
+            <td width="200">
+              <ngx-table-dropdown [options]="tableActions" (onActionSelected)="doAction($event, item)"></ngx-table-dropdown>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ngx-pagination (pageInit)="pageInit($event)" (pageChange)="pageChange($event)" [isEmptyNext]="isPaginationNextEmpty"></ngx-pagination>
+    </nb-card-body>
+</nb-card>

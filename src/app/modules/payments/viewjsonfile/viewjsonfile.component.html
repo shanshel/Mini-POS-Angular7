@@ -1,0 +1,22 @@
+<nb-card accent="info">
+  <nb-card-header>
+    عرض التقرير
+    <div class="float-left">
+      <button nbButton (click)="dismiss()">اغلاق</button>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+      <ag-grid-angular 
+      style="width: 95vw; height: 500px;" 
+      class="ag-theme-balham"
+      [rowData]="rowData" 
+      [columnDefs]="columnDefs"
+      [enableRtl]="true"
+      >
+    </ag-grid-angular>
+  </nb-card-body>
+  <nb-card-footer>
+    <button nbButton (click)="dismiss()">اغلاق</button>
+  </nb-card-footer>
+  </nb-card>
+    

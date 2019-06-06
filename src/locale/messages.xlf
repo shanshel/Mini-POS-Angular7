@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{getPercentValue()}}"/>%</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source>PM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source>AM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employ_system" datatype="html">
+        <source>نظام الموظفين</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@theme/components/header/header.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="control_pannel" datatype="html">
+        <source>
+      لوحة التحكم
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/@theme/layouts/one-column/one-column.layout.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meri" datatype="html">
+        <source>الأستحقاق</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/allowances/allowances.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/deductions/deductions.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="value" datatype="html">
+        <source>المبلغ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/allowances/allowances.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/deductions/deductions.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit" datatype="html">
+        <source>تأكيد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/dialog-confirmation/dialog-confirmation.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-edit/department-edit.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/dialog-confirmation/dialog-confirmation.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="close" datatype="html">
+        <source>اغلاق</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/dialog-confirmation/dialog-confirmation.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-dialog/reusable-dialog.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/dialog-confirmation/dialog-confirmation.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit_merit" datatype="html">
+        <source>تعديل  استحقاق </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="please_complete_following_error" datatype="html">
+        <source>من فضلك اكمل الأخطاء التالية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="merit_name_required" datatype="html">
+        <source> اس&gt; اسم الأستحقاق مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71d52d2e0bec9a5b457a83c824b3a07159f9e735" datatype="html">
+        <source>قيمة مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">value_required</note>
+      </trans-unit>
+      <trans-unit id="merit_name" datatype="html">
+        <source>اسم الأستحقاق</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="merit_value" datatype="html">
+        <source>قيمة الأستحقاق</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="percentage" datatype="html">
+        <source>نسبة مئوية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d70553429e11a5c7f58423f78fdeec07d53c006b" datatype="html">
+        <source>أضافة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/edit-allowances/edit-allowances.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-create/department-create.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">add</note>
+      </trans-unit>
+      <trans-unit id="add_new_merit" datatype="html">
+        <source>اضافة  استحقاق جديد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/allowances/dialog/add-allowances/add-allowances.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="log_in" datatype="html">
+        <source>تسجيل الدخول</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>الايميل:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/users-view/users-view.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_location_reuired" datatype="html">
+        <source>
+        خانة الايميل مطلوبة!
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_must_be_correct" datatype="html">
+        <source>
+        يجب ان يكون الايميل صحيحاً!
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password" datatype="html">
+        <source>كلمة المرور:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password_location_reuired" datatype="html">
+        <source>
+        خانة كلمة المرور مطلوبة!
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password_condition" datatype="html">
+        <source>
+        كلمة المرور يجب ان تحتوي
+        من <x id="INTERPOLATION" equiv-text="{{ getConfigValue(&apos;forms.validation.password.minLength&apos;) }}"/>
+        الى <x id="INTERPOLATION_1" equiv-text="{{ getConfigValue(&apos;forms.validation.password.maxLength&apos;) }}"/>
+        حروف او ارقام
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/auth/login/login.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_new_deduction" datatype="html">
+        <source>اضافة  استقطاع جديد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deduction_name_reuired" datatype="html">
+        <source> اسم الأستقطاع مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deduction_name" datatype="html">
+        <source>اسم الأستقطاع</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/pages/view-deductions/view-deductions.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="governmental" datatype="html">
+        <source>حكومي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/add-deduction/add-deduction.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit_new_deduction" datatype="html">
+        <source>تعديل  استقطاع </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/dialog/edit-deduction/edit-deduction.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view_deduction" datatype="html">
+        <source>عرض الأستقطاعات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/pages/view-deductions/view-deductions.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_deduction" datatype="html">
+        <source>
+            <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+            اضافة استقطاع
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/pages/view-deductions/view-deductions.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deduction_type" datatype="html">
+        <source>نوع الأستقطاع</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/pages/view-deductions/view-deductions.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deduction_percentage" datatype="html">
+        <source>الأستقطاع نسبة مئوية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/pages/view-deductions/view-deductions.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="choise" datatype="html">
+        <source>خيارات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/deduction/pages/view-deductions/view-deductions.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/sub-departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/users-view/users-view.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit_circuit" datatype="html">
+        <source>تعديل الدائرة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-edit/department-edit.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="consider_the_following" datatype="html">
+        <source>يجب مراعاة الاتي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-edit/department-edit.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-create/department-create.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="circuit_name_reuired" datatype="html">
+        <source>اسم الدائرة مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-edit/department-edit.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-create/department-create.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="circuit_name" datatype="html">
+        <source>اسم الدائرة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-edit/department-edit.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-create/department-create.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="864380d873c11bc96b02e3d38d22e7cb0abd5987" datatype="html">
+        <source>اغلاق</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-edit/department-edit.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">close</note>
+      </trans-unit>
+      <trans-unit id="add_circuit" datatype="html">
+        <source>اضافة دائرة </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/department-create/department-create.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="main_info_about_ministry_here" datatype="html">
+        <source>معلومات اساسية عن الوزارة هنا</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-dialog/reusable-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="main_info_about_payment_here" datatype="html">
+        <source>معلومات اساسية عن الدفعات هنا</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-dialog/reusable-dialog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="another_info_here" datatype="html">
+        <source>معلومات اخرى هنا</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-dialog/reusable-dialog.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view_department" datatype="html">
+        <source>
+        عرض الاقسام
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_department" datatype="html">
+        <source>
+          <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+          اضافة قسم
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="department_name" datatype="html">
+        <source>اسم القسم</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/sub-departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view_sub_department" datatype="html">
+        <source>
+    عرض الاقسام الفرعية
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/sub-departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add" datatype="html">
+        <source>اضافة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/department/pages/sub-departments-view/departments-view.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employee_create_title" datatype="html">
+        <source>اضافة مستخدم جديد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employees-view/employees-view.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="qi_card_smart_id" datatype="html">
+        <source>QiCard Smart ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="qi_card_account_number" datatype="html">
+        <source>Qicard Account Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="qi_card_number" datatype="html">
+        <source>Qicard Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="public_employee_id" datatype="html">
+        <source>ألرقم ألوظيفي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gov_id" datatype="html">
+        <source>الرقم ألحكومي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gov_card_id" datatype="html">
+        <source>رقم البطاقه ألموحده</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gov_family_id" datatype="html">
+        <source>ألرقم العائلي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="first_name" datatype="html">
+        <source>ألأسم ألأول</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="middle_name" datatype="html">
+        <source>ألأسم ألثاني</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="last_name" datatype="html">
+        <source>ألأسم ألثالث</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="surname" datatype="html">
+        <source>اللقب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="birth_date" datatype="html">
+        <source>تاريخ الميلاد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="address" datatype="html">
+        <source>عنوان ألسكن</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phone_number" datatype="html">
+        <source>رقم ألهاتف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employees-view/employees-view.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="marital_status" datatype="html">
+        <source>الحالة الزوجية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="gender" datatype="html">
+        <source>الجنس </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="father_full_name" datatype="html">
+        <source>أسم ألأب ألكامل</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mother_full_name" datatype="html">
+        <source>أسم ألأم ألكامل</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create" datatype="html">
+        <source>أضافة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-create/employee-create.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit_employee_title" datatype="html">
+        <source>تعديل موظف </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sex_type" datatype="html">
+        <source>الجنس </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-edit/employee-edit.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employee-view-one/employee-view-one.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employee_enrollment_title" datatype="html">
+        <source>تنسيب الموظف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="main_department" datatype="html">
+        <source>الدائرة الرئيسية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sub_department" datatype="html">
+        <source>الدائرة الفرعية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="job_grade" datatype="html">
+        <source>الترفيع</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="job_level" datatype="html">
+        <source>الدرجة الوظيفية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="enrollments_view_title" datatype="html">
+        <source>
+    عرض التنسيبات
+   </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create_enrollment" datatype="html">
+        <source>
+            اضافة تنسيب
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="assign_to" datatype="html">
+        <source>تنسيب الى</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="assign_date" datatype="html">
+        <source>تاريخ التنسيب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status" datatype="html">
+        <source>الحالة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="options" datatype="html">
+        <source>الخيارات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/enrollments-view/enrollments-view.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employees-view/employees-view.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view_employees_title" datatype="html">
+        <source> عرض الموظفين </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employees-view/employees-view.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employee_name" datatype="html">
+        <source>اسم الموظف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/employee/pages/employees-view/employees-view.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nominal_salary" datatype="html">
+        <source>الراتب الأسمي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="total_salary" datatype="html">
+        <source>الراتب الكلي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="salary_after_deduction" datatype="html">
+        <source>الراتب بعد الأستقطاعات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="date_of_payment_of_salary" datatype="html">
+        <source>تاريخ دفع الراتب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/dialog/payment-info/payment-info.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view_payment_info" datatype="html">
+        <source>
+    عرض معلومات الدفعات
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="chosse_date" datatype="html">
+        <source>اختر التاريخ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search" datatype="html">
+        <source>بحث</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search_about_employe" datatype="html">
+        <source>ابحث عن موظف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="full_name" datatype="html">
+        <source> الأسم الكامل</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="smart_number" datatype="html">
+        <source>الرقم الذكي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="city" datatype="html">
+        <source>المحافظة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="city_number" datatype="html">
+        <source>بطاقة المحافظة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="merits" datatype="html">
+        <source>الأستحقاقات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deductions" datatype="html">
+        <source>الأستقطاعات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nominal_alary" datatype="html">
+        <source>ألراتب الأسمي</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="departmen" datatype="html">
+        <source>القسم</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/payments/get-payments/get-payments.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ministries_view" datatype="html">
+        <source>
+        عرض الوزارات
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_ministry" datatype="html">
+        <source>
+          <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+          اضافة وزارة
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="advance_search" datatype="html">
+        <source>
+            <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+            بحث متقدم
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="choose_ministry" datatype="html">
+        <source>اختر الوزارة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="choose_directorate" datatype="html">
+        <source>اختر المديرية</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="full_name_employ" datatype="html">
+        <source>اسم الموظف الكامل</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="full_name_mother" datatype="html">
+        <source>اسم الأم الكامل</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ministry_name" datatype="html">
+        <source>اسم الوزارة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ministry_number" datatype="html">
+        <source>رقم الوزارة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-view-page/reusable-view-page.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_new_employ" datatype="html">
+        <source>اضافة موظف جديد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employ_name_required" datatype="html">
+        <source>اسم الموظف مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employ_name_must_be_between_4_to_40_letter" datatype="html">
+        <source>يجب ان يكون أسم الموظف ما بين ٤ الى ٤٠ حرف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mother_name_must_be_between_4_to_40_letter" datatype="html">
+        <source>يجب ان يكون أسم الأم ما بين ٤ الى ٤٠ حرف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mother_name_required" datatype="html">
+        <source>اسم الأم مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phone_number_accept_numbers_only" datatype="html">
+        <source>رقم الهاتف يقبل ارقام فقط</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phone_number_must_be_between_10_to_11_number_only" datatype="html">
+        <source>يجب ان يكون رقم الهاتف ما بين ١٠ الى ١١ رقم</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phone_number_required" datatype="html">
+        <source> رقم الهاتف مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="smart_number_must_be_between_4_to_40_letter" datatype="html">
+        <source>يجب ان يكون الرقم الذكي ما بين ٤ الى ٤٠ حرف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="smart_number_accept_only_numbers" datatype="html">
+        <source>الرقم الذكي يقبل ارقام فقط</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="smart_number_required" datatype="html">
+        <source> الرقم الذكي مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ministry_name_required" datatype="html">
+        <source>اسم الوزارة مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="directorate_name_reuired" datatype="html">
+        <source>اسم المديرية مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-create-page/reusable-create-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ministries_number" datatype="html">
+        <source>عدد الوزارات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="directorate_number" datatype="html">
+        <source>عدد المديريات</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="predecessor_type_number" datatype="html">
+        <source>عدد انواع السلف</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="predecessor_taken" datatype="html">
+        <source>السلف المأخوذة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="users_number" datatype="html">
+        <source> عدد المستخدمين </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/statistic/pages/admin/admin.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="employs_number" datatype="html">
+        <source> عدد الموظفين </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/statistic/pages/admin/admin.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="beneficiaries_number" datatype="html">
+        <source>  عدد المستفيدين </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Loans_info" datatype="html">
+        <source>معلومات القروض</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/reusable/pages/reusable-chart-page/reusable-chart-page.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="department_numbers" datatype="html">
+        <source> عدد الاقسام </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/statistic/pages/admin/admin.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f9309de2e2c2c496f660ab7c2505b4dacb3bf0d1" datatype="html">
+        <source>تعديل حساب المستخدم</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_reuired" datatype="html">
+        <source>الايميل مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password_reuired" datatype="html">
+        <source>كلمة المرور مطلوبة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sure_password" datatype="html">
+        <source>قم بتأكيد كلمة المرور</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="first_name_location_reuired" datatype="html">
+        <source>خانة الاسم الاول مطلوبة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-account-edit/user-account-edit.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="placement_user" datatype="html">
+        <source>تنسيب المستخدم</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/enrollment-create/enrollment-create.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view_users" datatype="html">
+        <source>عرض المستخدمين</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/users-view/users-view.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_user" datatype="html">
+        <source>اضافة مستخدم</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/users-view/users-view.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="group" datatype="html">
+        <source>المجموعة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/users-view/users-view.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="add_new_username" datatype="html">
+        <source>اضافة مستخدم جديد</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sure_password_must_be_identical" datatype="html">
+        <source>يجب مطابقة تأكيد كلمة المرور بشكل صحيح</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name_location_reuired" datatype="html">
+        <source>خانة الاسم الاول مطلوبة</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phone_number_reuired" datatype="html">
+        <source> رقم الهاتف مطلوب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="choose" datatype="html">
+        <source>قم بأختيار </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user_validation" datatype="html">
+        <source>صلاحية المستخدم </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="counter" datatype="html">
+        <source>محاسب</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="operator" datatype="html">
+        <source>مشغل</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/user/pages/user-create/user-create.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

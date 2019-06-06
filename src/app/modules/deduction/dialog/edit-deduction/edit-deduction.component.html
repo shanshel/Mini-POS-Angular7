@@ -1,0 +1,28 @@
+<nb-card accent="info">
+    <nb-card-header ngxTranslate="edit_new_deduction">تعديل  استقطاع </nb-card-header>
+    <nb-card-body>
+      <form [formGroup]="_form">
+        <div class="row">
+          <div class="input-group col-12 mb-3">
+              <label ngxTranslate="deduction_name">اسم الأستقطاع</label>
+              <input type="text" nbInput fullWidth formControlName="name" [status]="_form.controls.name.touched && _form.controls.name.errors ? 'danger' : ''">
+              <span class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.errors" ngxTranslate="deduction_name_reuired">اسم الاستقطاع مطلوب</span>
+
+            </div>
+            <div class="input-group col-6 mb-3">
+                <nb-checkbox formControlName="kind">
+                  <span ngxTranslate="governmental">حكومي</span> 
+                </nb-checkbox>
+            </div>
+            <div class="input-group col-6 mb-3">
+                <nb-checkbox formControlName="type">
+                  <span ngxTranslate="percentage">نسبة مئوية</span> 
+                </nb-checkbox>
+            </div>
+        </div>
+      </form>
+    </nb-card-body>
+    <nb-card-footer>
+      <button nbButton [disabled]="_form.invalid" (click)="createNewRole()" accent="success" ngxTranslate="edit">تعديل</button>
+    </nb-card-footer>
+  </nb-card>

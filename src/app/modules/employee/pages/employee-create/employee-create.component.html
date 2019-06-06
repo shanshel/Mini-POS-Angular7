@@ -1,0 +1,137 @@
+<nb-card  class="dialog">
+  <nb-card-header class="card_header" ngxTranslate="employee_create_title">اضافة مستخدم جديد</nb-card-header>
+    <nb-card-body>
+        
+    <form [formGroup]="_form">
+      <div class="row">
+        <!-- </div> -->
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="qi_card_smart_id">QiCard Smart ID</label>
+          <input type="text" nbInput fullWidth formControlName="qiSmartId" >
+          
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="qi_card_account_number">Qicard Account Number</label>
+          <input type="text" nbInput fullWidth formControlName="qiAccountNumber" >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="qi_card_number">Qicard Number</label>
+          <input type="text" nbInput fullWidth formControlName="qiCardNumber" >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="public_employee_id">ألرقم ألوظيفي</label>
+          <input type="text" nbInput fullWidth formControlName="publicEmployerId" >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="public_employee_id">الرقم ألحكومي</label>
+          <input type="text" nbInput fullWidth formControlName="govId" >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="id_card_number">رقم البطاقه ألموحده</label>
+          <input type="text" nbInput fullWidth formControlName="govCardId"  >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="gov_family_id">ألرقم العائلي</label>
+          <input type="text" nbInput fullWidth formControlName="govFamilyId" >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <div class="row" style="padding-right:15px">
+          <label ngxTranslate="first_name">ألأسم ألأول</label> 
+          <div style="color:red"> * </div>
+        </div>
+          <input type="text" name="firstName" nbInput fullWidth formControlName="firstName" [status]="form.firstName.errors && form.firstName.dirty ? 'danger' : ''" required>
+          <span ngxTranslate="first_name_location_reuired" style="color:red; font-size: 13px;" *ngIf="form.firstName.touched && form.firstName.invalid">الاسم الاول مطلوب</span>
+        </div>
+        <div class="input-group col-3 mb-3">
+            <div class="row" style="padding-right:15px">
+          <label ngxTranslate="middle_name">  ألأسم ألثاني</label>
+          <div style="color:red"> * </div>
+            </div>
+          <input type="text" name="middleName" nbInput fullWidth formControlName="middleName" [status]="form.middleName.errors && form.middleName.dirty ? 'danger' : ''" required>
+          <span style="color:red; font-size: 13px;" *ngIf="form.middleName.touched && form.middleName.invalid">الاسم الثاني مطلوب</span>
+        </div>
+        <div class="input-group col-3 mb-3">
+            <div class="row" style="padding-right:15px">
+          <label ngxTranslate="last_name">ألأسم ألثالث</label>
+          <div style="color:red"> * </div>
+            </div>
+          <input type="text" name="lastName" nbInput fullWidth formControlName="lastName" [status]="form.lastName.errors && form.lastName.dirty ? 'danger' : ''" required>
+          <span style="color:red; font-size: 13px;" *ngIf="form.lastName.touched && form.lastName.invalid">الاسم الثالث مطلوب</span>
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="surname">اللقب</label>
+          <input type="text" nbInput fullWidth formControlName="surName" >
+        </div>
+        
+        
+          <div class="input-group col-3 mb-3">
+            <label ngxTranslate="birthdate">تاريخ الميلاد</label>
+
+            <input nbInput [nbDatepicker]="formpicker" fullWidth formControlName="birthDate" >
+            <nb-datepicker #formpicker></nb-datepicker>
+            
+    
+          </div>
+        
+     
+
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="address">عنوان ألسكن</label>
+          <input type="text" nbInput fullWidth formControlName="address" >
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="phone_number">رقم ألهاتف</label>
+          <input type="text" nbInput fullWidth formControlName="mobileNo"  >
+          <span class="error-span" *ngIf="_form.controls.mobileNo.errors?.number  ||  _form.controls.mobileNo.errors?.minlength">رقم الهاتف يجب ان يكون ارقام فقط واكثر من 11 رقم</span>
+
+    
+
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="email">ألبريد ألألكتروني</label>
+          <input type="text" nbInput fullWidth formControlName="email" >
+          <span class="error-span" *ngIf="_form.controls.email.errors?.email ">يجب ان يكون الايميل صحيحاً</span>
+
+        </div>
+
+        <div class="input-group col-3 mb-3">
+        <div class="">  <label ngxTranslate="marital_status">الحالة الزوجية</label></div>
+          
+          <nb-select class="minwidth300 " placeholder="من فضلك اختر الحالة الزوجية" formControlName="maritalStatus">
+            <nb-option value="0"><span ngxTranslate="married" >متزوج</span></nb-option>
+            <nb-option value="1"><span ngxTranslate="absolute">مطلق</span></nb-option>
+            <nb-option value="2"><span ngxTranslate="widowed">ارمل</span></nb-option>
+            <nb-option value="3"><span ngxTranslate="unmarried">اعزب</span></nb-option>
+          </nb-select>
+        </div>
+
+        
+          <div class="input-group col-3 mb-3">
+            <label ngxTranslate="gender">الجنس </label>
+            <nb-select placeholder="من فضلك اختر الحالة الزوجية" class="minwidth300 " outline formControlName="gender">
+              <nb-option value="0"><span ngxTranslate="male">ذكر</span></nb-option>
+              <nb-option value="1"><span ngxTranslate="female">انثى</span></nb-option>
+            </nb-select>
+          </div>
+       
+      
+
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="full_father_name">أسم ألأب ألكامل</label>
+          <input type="text" nbInput fullWidth formControlName="fatherFullName">
+        </div>
+        <div class="input-group col-3 mb-3">
+          <label ngxTranslate="full_mother_name">أسم ألأم ألكامل</label>
+          <input type="text" nbInput fullWidth formControlName="motherFullName" >
+        </div>
+      </div>
+    </form>
+
+
+</nb-card-body>
+<nb-card-footer>
+    <button nbButton (click)="submit()" [disabled]="_form.invalid" ngxTranslate="add">أضافة</button>
+    <button nbButton status="danger" (click)="dismiss()" ngxTranslate="close">اغلاق</button>
+
+</nb-card-footer>
+</nb-card>

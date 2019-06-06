@@ -1,0 +1,11 @@
+<div class="dropdown" placement="bottom" ngbDropdown>
+    <button class="btn btn-info" type="button" ngbDropdownToggle>
+        {{label}}
+    </button>
+    <ul class="dropdown-menu" ngbDropdownMenu>
+      <li class="dropdown-item text-right" *ngFor="let item of options" (click)="selectAction(item.value)">
+        {{item.label}}
+        <i *ngIf="item.icon" class="{{item.icon}}"></i>
+      </li>
+    </ul>
+</div>

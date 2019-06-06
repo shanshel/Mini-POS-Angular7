@@ -1,0 +1,76 @@
+<nb-card  class="dialog printable">
+    <nb-card-body id="cardprint">
+
+        <h1 class="dg_label dg_header" ngxTranslate="emp_info">معلومات الموظف</h1>
+        <div class="row">
+            <div class="col-4">
+              <span ngxTranslate="first_name" >الأسم الأول</span>
+              <input type="text" disabled [value]="item.firstName" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span ngxTranslate="middle_name"  >أسم الأب</span>
+                <input type="text" disabled [value]="item.middleName" class="form-control mt-2 mb-2">
+              </div>
+            <div class="col-4">
+                <span  ngxTranslate="last_name" >الأسم الأخير</span>
+                <input type="text" disabled [value]="item.lastName" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span  ngxTranslate="surname" >اللقب</span>
+                <input type="text" disabled [value]="item.surName" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span ngxTranslate="qi_card_smart_id"  >رقم بطاقة QiCard</span>
+                <input type="text" disabled [value]="item.qiCardNumber" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span ngxTranslate="public_employee_id"  >الرقم الوظيفي</span>
+                <input type="text" disabled [value]="item.publicEmployerId" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span  ngxTranslate="phone_number" >رقم الهاتف</span>
+                <input type="text" disabled [value]="item.mobileNo" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span  ngxTranslate="email" >البريد الألكتروني</span>
+                <input type="text" disabled [value]="item.email" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span  ngxTranslate="gender" >الجنس</span>
+                <input type="text" disabled [value]="item.gender == 0 ? 'ذكر' : 'انثى'" class="form-control mt-2 mb-2">
+            </div>
+        </div>
+
+        <h1 class="dg_label dg_subheader"  ngxTranslate="salary_info">معلومات الراتب</h1>
+        <div class="row">
+            <div class="col-4">
+              <span  ngxTranslate="nominal_salary"  >الراتب الأسمي</span>
+              <input type="text" disabled [value]="item.payment.basicSalary | number" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span  ngxTranslate="total_salary"  >الراتب الكلي</span>
+                <input type="text" disabled [value]="item.payment.totalSalary | number" class="form-control mt-2 mb-2">
+              </div>
+            <div class="col-4">
+                <span ngxTranslate="salary_after_deduction"  >الراتب بعد الأستقطاعات</span>
+                <input type="text" disabled [value]="item.payment.netSalary | number" class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span ngxTranslate="date_of_payment_of_salary"  >تاريخ دفع الراتب</span>
+                <input type="text" disabled [value]="item.payment.payDate | date" class="form-control mt-2 mb-2">
+            </div>
+        </div>
+
+        <h1 class="dg_label dg_subheader"  ngxTranslate="deductions">الاستقطاعات </h1>
+        <ngx-deductions *ngIf="item.payment.deductions" [items]="item.payment.deductions"></ngx-deductions>
+
+        <h1 class="dg_label dg_subheader"  ngxTranslate="merits">الاستحقاقات </h1>
+        <ngx-allowances *ngIf="item.payment.allowances" [items]="item.payment.allowances"></ngx-allowances>
+
+    </nb-card-body>
+    <nb-card-footer>
+        <button nbButton status="info" (click)="print()" ngxTranslate="print" class="non-print">طباعة</button>
+
+        <button nbButton status="danger" (click)="dismiss()" ngxTranslate="close" class="non-print">اغلاق</button>
+    </nb-card-footer>
+  </nb-card>

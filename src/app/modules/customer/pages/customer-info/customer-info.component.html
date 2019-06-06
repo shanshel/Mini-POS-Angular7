@@ -1,0 +1,38 @@
+<div class="page-header"></div>
+  <nb-card accent="primary">
+      <nb-card-header style="text-align: center;"> المعلومات الشخصية </nb-card-header>
+      <nb-card-body style="text-align: center;">
+        <div><i class="nb-person" style="font-size: 150px;"></i></div>
+        <div style="font-size: 25px;"> رفيع رعد عبد اللطيف </div>
+        <div style="padding-bottom: 20px; padding-top: 10px;"> مدير </div>
+        <div>  07730505025 
+         
+        </div>
+        <div> مطورين </div>
+      </nb-card-body>
+  </nb-card>
+  <h1 class="dg_label dg_subheader"  ngxTranslate="salary_info">معلومات الراتب</h1>
+        <div class="row">
+            <div class="col-4">
+              <span  ngxTranslate="nominal_salary"  >الراتب الأسمي</span>
+              <input type="text" disabled  class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span  ngxTranslate="total_salary"  >الراتب الكلي</span>
+                <input type="text" disabled  class="form-control mt-2 mb-2">
+              </div>
+            <div class="col-4">
+                <span ngxTranslate="salary_after_deduction"  >الراتب بعد الأستقطاعات</span>
+                <input type="text" disabled  class="form-control mt-2 mb-2">
+            </div>
+            <div class="col-4">
+                <span ngxTranslate="date_of_payment_of_salary"  >تاريخ دفع الراتب</span>
+                <input type="text" disabled  class="form-control mt-2 mb-2">
+            </div>
+        </div>
+
+        <h1 class="dg_label dg_subheader"  ngxTranslate="deductions">الاستقطاعات </h1>
+        <ngx-deductions ></ngx-deductions>
+
+        <h1 class="dg_label dg_subheader"  ngxTranslate="merits">الاستحقاقات </h1>
+        <ngx-allowances  ></ngx-allowances>
