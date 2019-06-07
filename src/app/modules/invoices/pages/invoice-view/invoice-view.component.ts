@@ -3,6 +3,7 @@ import { NbDialogService } from '@nebular/theme';
 import { getTranslate } from '../../../../lang';
 import { BankService } from '../../../../core/services/http/bank/bank.service';
 import { InvoiceCreateComponent } from '../invoice-create/invoice-create.component';
+import { InvoiceService } from '../../../../core/services/http/invoice.service';
 @Component({
   selector: 'ngx-invoice-view',
   templateUrl: './invoice-view.component.html',
@@ -17,18 +18,13 @@ export class InvoiceViewComponent implements OnInit {
       value: 'edit',
       icon: 'nb-edit',
     },
-    {
-      label: 'عرض الفواتير',
-      value: 'view-invoice',
-      icon: 'nb-edit',
-    }
   ];
 
   banks: any[] = [];
 
   constructor(
     private dialogService: NbDialogService,
-    private _httpBank : BankService,
+    private _http : InvoiceService,
   ){}
 
   ngOnInit(): void {
@@ -36,7 +32,7 @@ export class InvoiceViewComponent implements OnInit {
   }
 
   renderBanks() {
-    this._httpBank.getBanks({}).subscribe(res =>{
+    this._http.GetInvoices({}).subscribe(res =>{
         this.banks = res['data'];
         this.isPaginationNextEmpty = false;
       },

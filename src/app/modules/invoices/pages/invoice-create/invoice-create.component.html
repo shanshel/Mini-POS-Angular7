@@ -4,10 +4,31 @@
     <form [formGroup]="_form" (ngSubmit)="_form.valid && onSubmit()" novalidate>
       <div class="row">
           <div class="input-group col-12 mb-3">
-              <label>اسم المصرف</label>
-              <input type="text" nbInput fullWidth formControlName="name" [status]="_form.controls.name.errors && _form.controls.name.dirty ? 'danger' : ''">
-              <span class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.invalid">اسم المصرف مطلوب</span>
+              <angular2-multiselect [data]="dropdownList" formControlName="customer_id" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
+                  (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)">
+                  <c-search>
+                      <ng-template>
+                          <input type="text" (keyup)="onSearch($event)" placeholder="بحث في الزبائن" style="border: none;width: 100%; height: 100%;outline: none;"/>
+                      </ng-template>
+                  </c-search>
+                  <c-item>
+                      <ng-template let-item="item">
+                          <label style="color: #333;width: 150px;">{{item.name}}</label>
+                      </ng-template>
+                  </c-item>
+              </angular2-multiselect>
 
+              <span class="error-span" *ngIf="_form.controls.customer_id.touched && _form.controls.customer_id.invalid">اسم المصرف مطلوب</span>
+          </div>
+          <div class="input-group col-12 mb-3">
+            <label>المبلغ المراد تسديده</label>
+            <input type="text" nbInput fullWidth formControlName="total_amount" [status]="_form.controls.total_amount.errors && _form.controls.total_amount.dirty ? 'danger' : ''">
+            <span class="error-span" *ngIf="_form.controls.total_amount.touched && _form.controls.total_amount.invalid">ادخل المبلغ الكلي بشكل صحيح</span>
+          </div>
+          <div class="input-group col-12 mb-3">
+            <label>المبلغ المدفوع</label>
+            <input type="text" nbInput fullWidth formControlName="payed_amount" [status]="_form.controls.payed_amount.errors && _form.controls.payed_amount.dirty ? 'danger' : ''">
+            <span class="error-span" *ngIf="_form.controls.payed_amount.touched && _form.controls.payed_amount.invalid">ادخل المبلغ المدفوع بشكل صحيح</span>
           </div>
       </div>
     </form>

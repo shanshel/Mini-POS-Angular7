@@ -18,6 +18,12 @@ const routes: Routes = [
     loadChildren: 'app/modules/customers/customers.module#CustomersModule',
     canActivate: [],
   },
+  {
+    path: 'invoices',
+    pathMatch: 'full',
+    loadChildren: 'app/modules/invoices/invoices.module#InvoicesModule',
+    canActivate: [],
+  },
  
 ];
 

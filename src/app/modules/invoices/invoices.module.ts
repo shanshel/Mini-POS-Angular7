@@ -4,6 +4,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { NbDialogModule } from '@nebular/theme';
 import { InvoicesRoutingModule, routedComponents } from './invoices-routing.module';
 import { InvoiceCreateComponent } from './pages/invoice-create/invoice-create.component';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { InvoiceCreateComponent } from './pages/invoice-create/invoice-create.co
     SharedModule,
     InvoicesRoutingModule,
     NbDialogModule.forChild(),
+    AngularMultiSelectModule,
   ],
   entryComponents: [
     InvoiceCreateComponent

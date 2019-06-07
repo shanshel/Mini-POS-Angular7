@@ -721,3 +721,24 @@ thead tr {
 .nb-theme-corporate nb-sidebar .header-logo img {
   margin-left: 97px;
 }
+.dropdown-list  {
+  ul {
+    li {
+      text-align: right !important;
+    }
+  }
+}
+.list-filter input {
+  padding-right: 10px !important;
+}
+.lazyContainer label {
+  padding-right: 10px !important; 
+}
+span {
+  &.c-angle-up, &.c-angle-down {
+    left: 10px !important;
+    right: auto !important;
+  }
+}
+
+
