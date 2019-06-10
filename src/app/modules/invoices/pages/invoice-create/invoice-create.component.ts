@@ -33,8 +33,7 @@ export class InvoiceCreateComponent implements OnInit {
       }; 
       
     onItemSelect(item:any){
-      console.log(item);
-      console.log(this.selectedItems);
+      this._form.controls.customer_id.setValue(item.id);
     }
     OnItemDeSelect(item:any){
         console.log(item);
@@ -90,6 +89,9 @@ export class InvoiceCreateComponent implements OnInit {
         Validators.required, 
         CustomValidators.number,
       ]),
+      selected_customer: new FormControl('', [
+        Validators.required,
+      ]),
       customer_id: new FormControl('', [
         Validators.required,
       ]),
@@ -118,6 +120,7 @@ export class InvoiceCreateComponent implements OnInit {
         });
 
     } else {
+      console.log(this._form.value);
        this._httpInvoice.AddInvoice(this._form.value).subscribe(res => {
         this.dismiss();
        });

@@ -4,6 +4,7 @@ import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 import { CustomValidators } from 'ngx-custom-validators';
 import { Router } from '@angular/router';
 import { NbDialogRef } from '@nebular/theme';
+import { ItemService } from '../../../../core/services/http/item.service';
 
 @Component({
   selector: 'ngx-item-create',
@@ -17,7 +18,7 @@ export class ItemCreateComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private _httpBank : BankService,
+    private _httpItem : ItemService,
     private router: Router,
     protected ref: NbDialogRef<ItemCreateComponent>
 
@@ -38,13 +39,21 @@ export class ItemCreateComponent implements OnInit {
   private buildAddForm() {
     this._form = this.fb.group({
       name: new FormControl('', [
-        Validators.required,
-        CustomValidators.rangeLength([1, 500])
+        Validators.required
       ]),
-      phone: new FormControl('', [
-        Validators.required, 
-        CustomValidators.rangeLength([7, 12]),
-        CustomValidators.number,
+      buy_price: new FormControl('', [
+        Validators.required,
+        CustomValidators.number
+      ]),
+      sell_price: new FormControl('', [
+        Validators.required,
+        CustomValidators.number
+      ]),
+      barcode: new FormControl('', [
+        CustomValidators.number
+      ]),
+      quantity: new FormControl('', [
+        CustomValidators.number
       ]),
     });
   }
@@ -52,27 +61,38 @@ export class ItemCreateComponent implements OnInit {
   private buildEditForm() {
     this._form = this.fb.group({
       name: new FormControl(this.item.name, [
+        Validators.required
+      ]),
+      buy_price: new FormControl(this.item.buy_price, [
         Validators.required,
-        CustomValidators.rangeLength([1, 500])
+        CustomValidators.number
       ]),
-      phone: new FormControl(this.item.name, [
-        Validators.required, 
-        CustomValidators.rangeLength([7, 12]),
-        CustomValidators.number,
+      sell_price: new FormControl(this.item.sell_price, [
+        Validators.required,
+        CustomValidators.number
       ]),
-      id: new FormControl(this.item.id, [Validators.required]),
+      barcode: new FormControl(this.item.barcode, [
+        CustomValidators.number
+      ]),
+      quantity: new FormControl(this.item.quantity, [
+        CustomValidators.number
+      ]),
+      id: new FormControl(this.item.id, [
+        Validators.required
+      ]),
     });
   }
+
 
   onSubmit() {
     if (this.item) {
 
-       this._httpBank.updateBank(this._form.value).subscribe(res => {
+       this._httpItem.UpdateItem(this._form.value, this._form.value.id).subscribe(res => {
           this.dismiss();
         });
 
     } else {
-       this._httpBank.addBank(this._form.value).subscribe(res => {
+       this._httpItem.AddItem(this._form.value).subscribe(res => {
         this.dismiss();
        });
     }

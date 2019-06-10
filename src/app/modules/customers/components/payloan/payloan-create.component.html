@@ -1,0 +1,20 @@
+<nb-card accent="info">
+<nb-card-header>تسديد دين</nb-card-header>
+  <nb-card-body>
+    <form [formGroup]="_form" (ngSubmit)="_form.valid && onSubmit()" novalidate>
+      <div class="row">
+          <div class="input-group col-12 mb-3">
+              <label>المبلغ المسدد</label>
+              <input type="text" nbInput fullWidth formControlName="amount" [status]="_form.controls.amount.errors && _form.controls.amount.dirty ? 'danger' : ''">
+              <span class="error-span" *ngIf="_form.controls.amount.touched && _form.controls.amount.invalid">ادخل الكمية المسددة بشكل صحيح</span>
+          </div>
+      </div>
+    </form>
+</nb-card-body>
+  <nb-card-footer>
+
+    <button nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()">تسديد</button>
+
+</nb-card-footer>
+</nb-card>
+ 

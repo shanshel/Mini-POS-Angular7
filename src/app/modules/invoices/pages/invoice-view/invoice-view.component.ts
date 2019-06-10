@@ -20,7 +20,7 @@ export class InvoiceViewComponent implements OnInit {
     },
   ];
 
-  banks: any[] = [];
+  items: any[] = [];
 
   constructor(
     private dialogService: NbDialogService,
@@ -33,7 +33,7 @@ export class InvoiceViewComponent implements OnInit {
 
   renderBanks() {
     this._http.GetInvoices({}).subscribe(res =>{
-        this.banks = res['data'];
+        this.items = res['data'];
         this.isPaginationNextEmpty = false;
       },
       err => {

@@ -1,22 +1,41 @@
 <nb-card accent="info">
-<nb-card-header>اضافة مادة جديدة</nb-card-header>
-  <nb-card-body>
-    <form [formGroup]="_form" (ngSubmit)="_form.valid && onSubmit()" novalidate>
-      <div class="row">
-          <div class="input-group col-12 mb-3">
-              <label>اسم المصرف</label>
+  <nb-card-header>اضافة مادة جديدة</nb-card-header>
+    <nb-card-body>
+      <form [formGroup]="_form" (ngSubmit)="_form.valid && onSubmit()" novalidate>
+        <div class="row">
+            <div class="input-group col-12 mb-3">
+              <label>اسم المادة</label>
               <input type="text" nbInput fullWidth formControlName="name" [status]="_form.controls.name.errors && _form.controls.name.dirty ? 'danger' : ''">
-              <span class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.invalid">اسم المصرف مطلوب</span>
-
-          </div>
-      </div>
-    </form>
-</nb-card-body>
-  <nb-card-footer>
-
-    <button *ngIf="!item" nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()">أضافة</button>
-    <button *ngIf="item" nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()">تعديل</button>
-
-</nb-card-footer>
-</nb-card>
- 
+              <span class="error-span" *ngIf="_form.controls.name.touched && _form.controls.name.invalid">ادخل الاسم بشكل صحيح</span>
+            </div>
+            <div class="input-group col-12 mb-3">
+              <label>سعر الشراء </label>
+              <input type="text" nbInput fullWidth formControlName="buy_price" [status]="_form.controls.buy_price.errors && _form.controls.buy_price.dirty ? 'danger' : ''">
+              <span class="error-span" *ngIf="_form.controls.buy_price.touched && _form.controls.buy_price.invalid">ادخل سعر الشراء بشكل صحيح</span>
+            </div>
+            <div class="input-group col-12 mb-3">
+              <label>سعر البيع </label>
+              <input type="text" nbInput fullWidth formControlName="sell_price" [status]="_form.controls.sell_price.errors && _form.controls.sell_price.dirty ? 'danger' : ''">
+              <span class="error-span" *ngIf="_form.controls.sell_price.touched && _form.controls.sell_price.invalid">ادخل سعر البيع بشكل صحيح</span>
+            </div> 
+            <div class="input-group col-12 mb-3">
+              <label>الباركود</label>
+              <input type="text" nbInput fullWidth formControlName="barcode" [status]="_form.controls.barcode.errors && _form.controls.barcode.dirty ? 'danger' : ''">
+              <span class="error-span" *ngIf="_form.controls.barcode.touched && _form.controls.barcode.invalid">ادخل الباركود بشكل صحيح او اتركه فارغاً</span>
+            </div> 
+            <div class="input-group col-12 mb-3">
+              <label>الكمية</label>
+              <input type="text" nbInput fullWidth formControlName="quantity" [status]="_form.controls.quantity.errors && _form.controls.quantity.dirty ? 'danger' : ''">
+              <span class="error-span" *ngIf="_form.controls.quantity.touched && _form.controls.quantity.invalid">ادخل الكمية بشكل صحيح او اتركها فارغة</span>
+            </div> 
+        </div>
+      </form>
+  </nb-card-body>
+    <nb-card-footer>
+  
+      <button *ngIf="!item" nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()">أضافة</button>
+      <button *ngIf="item" nbButton [disabled]="_form.invalid" (click)="_form.valid && onSubmit()">تعديل</button>
+  
+  </nb-card-footer>
+  </nb-card>
+   

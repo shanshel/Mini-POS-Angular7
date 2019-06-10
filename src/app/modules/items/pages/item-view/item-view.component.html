@@ -24,12 +24,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let item of banks">
+          <tr *ngFor="let item of items">
             <td>{{item.name}}</td>
             <td>{{item.barcode}}</td>
             <td>{{item.buy_price}}</td>
             <td>{{item.sell_price}}</td>
-            <td>{{item.quantity}}</td>
+            <td *ngIf="item.quantity == -1">غير محدودة</td>
+            <td *ngIf="item.quantity != -1">{{item.quantity}}</td>
             <td width="200">
               <ngx-table-dropdown [options]="tableActions" (onActionSelected)="doAction($event, item)"></ngx-table-dropdown>
             </td>

@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { NbDialogService } from '@nebular/theme';
 import { getTranslate } from '../../../../lang';
 import { BankService } from '../../../../core/services/http/bank/bank.service';
+import { ItemService } from '../../../../core/services/http/item.service';
 @Component({
-  selector: 'ngx-customer-view',
-  templateUrl: './customer-view.component.html',
-  styleUrls: ['./customer-view.component.scss']
+  selector: 'ngx-items-view',
+  templateUrl: './item-view.component.html',
+  styleUrls: ['./item-view.component.scss']
 })
 export class ItemViewComponent implements OnInit {
   isPaginationNextEmpty = false;
@@ -16,28 +17,23 @@ export class ItemViewComponent implements OnInit {
       label: 'تعديل',
       value: 'edit',
       icon: 'nb-edit',
-    },
-    {
-      label: 'عرض الفواتير',
-      value: 'view-invoice',
-      icon: 'nb-edit',
     }
   ];
 
-  banks: any[] = [];
+  items: any[] = [];
 
   constructor(
     private dialogService: NbDialogService,
-    private _httpBank : BankService,
+    private _httpItems : ItemService,
   ){}
 
   ngOnInit(): void {
-    this.renderBanks();
+    this.render();
   }
 
-  renderBanks() {
-    this._httpBank.getBanks({}).subscribe(res =>{
-        this.banks = res['data'];
+  render() {
+    this._httpItems.GetItems({}).subscribe(res =>{
+        this.items = res['data'];
         this.isPaginationNextEmpty = false;
       },
       err => {
@@ -53,7 +49,7 @@ export class ItemViewComponent implements OnInit {
           item: item
         },
       }).onClose.subscribe(res => {
-        this.renderBanks();
+        this.render();
       });
     }
   }
@@ -62,7 +58,7 @@ export class ItemViewComponent implements OnInit {
     this.dialogService.open(ItemCreateComponent, {
       context: {},
     }).onClose.subscribe(res => {
-      this.renderBanks();
+      this.render();
     });
   }
 

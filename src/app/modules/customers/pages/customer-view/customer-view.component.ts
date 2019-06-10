@@ -4,6 +4,7 @@ import { NbDialogService } from '@nebular/theme';
 import { getTranslate } from '../../../../lang';
 import { BankService } from '../../../../core/services/http/bank/bank.service';
 import { CustomerCreateComponent } from '../customer-create/customer-create.component';
+import { PayloanComponent } from '../../components/payloan/payloan-create.component';
 @Component({
   selector: 'ngx-customer-view',
   templateUrl: './customer-view.component.html',
@@ -16,6 +17,11 @@ export class CustomerViewComponent implements OnInit {
     {
       label: 'تعديل',
       value: 'edit',
+      icon: 'nb-edit',
+    },
+    {
+      label: 'تسديد دين',
+      value: 'pay',
       icon: 'nb-edit',
     },
     {
@@ -52,6 +58,15 @@ export class CustomerViewComponent implements OnInit {
       this.dialogService.open(CustomerCreateComponent, {
         context: {
           item: item
+        },
+      }).onClose.subscribe(res => {
+        this.render();
+      });
+    }
+    else if (event === "pay") {
+      this.dialogService.open(PayloanComponent, {
+        context: {
+          customer: item
         },
       }).onClose.subscribe(res => {
         this.render();

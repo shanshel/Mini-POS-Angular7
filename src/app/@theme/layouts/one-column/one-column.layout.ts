@@ -16,7 +16,7 @@ import { StateService } from '../../../@core/utils';
                responsive
                [end]="sidebar.id === 'end'">
                <div class="header-logo">
-                <img src="assets/images/logo.png" />
+                <!-- <img src="assets/images/logo.png" /> -->
                </div>
     <nb-sidebar-header *ngIf="currentTheme !== 'corporate'" >
     

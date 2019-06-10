@@ -24,6 +24,12 @@ const routes: Routes = [
     loadChildren: 'app/modules/invoices/invoices.module#InvoicesModule',
     canActivate: [],
   },
+  {
+    path: 'items',
+    pathMatch: 'full',
+    loadChildren: 'app/modules/items/items.module#ItemsModule',
+    canActivate: [],
+  },
  
 ];
 
