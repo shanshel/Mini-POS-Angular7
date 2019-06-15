@@ -1,0 +1,39 @@
+angular2-multiselect {
+    min-width: 400px;
+}
+.title-header {
+    margin: 1rem;
+}
+nb-card-header {
+
+    margin-bottom: 1rem;
+}
+nb-card-body {
+    padding: 0;
+    min-height: 400px;
+}
+.table {
+    thead {
+        th {
+            padding: 0 !important;
+            text-align: center;
+        }
+    }
+}
+.info-item {
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
+.submit-form {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+

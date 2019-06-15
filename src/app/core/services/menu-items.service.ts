@@ -23,75 +23,32 @@ export class MenuItemsService {
 
   buildMenu(role) {
 
-    if (role === environment.Role.Operator) {
-      this.MENU_ITEMS = [
-        {
-          title: 'الاحصائيات',
-          expanded: false,
-          link: '/statistics/operator',
-          icon: 'nb-keypad',
-        },
-        {
-          title: 'الزبائن',
-          expanded: false,
-          link: '/customer',
-          icon: 'nb-person',
-        },
-        {
-          title: 'الفواتير',
-          expanded: false,
-          link: '/jobtitle',
-          icon: 'nb-title',
-        }
-      ];
-    }
-    else if (role === environment.Role.Admin) {
-      this.MENU_ITEMS = [
-        {
-          title: 'الاحصائيات',
-          expanded: false,
-          link: '/statistics/operator',
-          icon: 'nb-keypad',
-        },
-        {
-          title: 'الزبائن',
-          expanded: false,
-          link: '/customer',
-          icon: 'nb-person',
-        },
-        {
-          title: 'الفواتير',
-          expanded: false,
-          link: '/jobtitle',
-          icon: 'nb-title',
-        }
-      ];
-    }
-
-    else if (role === environment.Role.Accountant) {
-      this.MENU_ITEMS = [
-        {
-          title: 'الاحصائيات',
-          expanded: false,
-          link: '/statistics/operator',
-          icon: 'nb-keypad',
-        },
-        {
-          title: 'الزبائن',
-          expanded: false,
-          link: '/customer',
-          icon: 'nb-person',
-        },
-        {
-          title: 'الفواتير',
-          expanded: false,
-          link: '/jobtitle',
-          icon: 'nb-title',
-        }
-
-
-      ];
-    }
+    this.MENU_ITEMS = [
+      {
+        title: 'البيع',
+        expanded: false,
+        link: '/sell',
+        icon: 'nb-keypad',
+      },
+      {
+        title: 'المواد',
+        expanded: false,
+        link: '/items',
+        icon: 'nb-keypad',
+      },
+      {
+        title: 'الزبائن',
+        expanded: false,
+        link: '/customer',
+        icon: 'nb-person',
+      },
+      {
+        title: 'الفواتير',
+        expanded: false,
+        link: '/invoices',
+        icon: 'nb-title',
+      }
+    ];
  
 
   }

@@ -1,0 +1,105 @@
+<div class="page-header"></div>
+<div class="row">
+    <div class="col-8">
+        <nb-card accent="info" >
+            <nb-card-header>
+              <div class="text-center title-header">
+                  <h3> قائمة البيع </h3>
+              </div>
+          
+              <div class="row">
+                  <div class="input-group col-12 mb-3">
+                      <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems" 
+                      [settings]="dropdownSettings" 
+                      (onSelect)="onItemSelect($event)" 
+                      (onDeSelect)="OnItemDeSelect($event)"
+                      (onSelectAll)="onSelectAll($event)"
+                      (onDeSelectAll)="onDeSelectAll($event)">
+          
+                      <c-search>
+                          <ng-template>
+                              <input type="text" (keyup)="onSearch($event)" placeholder="بحث في المواد" style="border: none;width: 100%; height: 100%;outline: none;"/>
+                          </ng-template>
+                      </c-search>
+                      <c-item>
+                          <ng-template let-item="item">
+                              <label style="color: #333;width: 150px;">{{item.name}}</label>
+                          </ng-template>
+                      </c-item>
+                  </angular2-multiselect>
+          
+                  </div>
+              </div>
+            </nb-card-header>
+              <nb-card-body>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">اسم المادة</th>
+                        <th scope="col">السعر</th>
+                        <th scope="col">الكمية</th>
+                        <th scope="col">السعر الكلي</th>
+                        <th scope="col">الخيارات</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of tableItems">
+                        <td>{{item.name}}</td>
+                        <td>{{item.sell_price}}</td>
+                        <td>
+                            
+                          <span class="text-success display-4 align-middle" (click)="addItemToTable(item)">
+                              <i class="nb-arrow-dropup"></i>
+                          </span>
+                          {{item.count}}
+                          <span class="text-danger display-4 align-middle" (click)="oddItemInTable(item)">
+                              <i class="nb-arrow-dropdown"></i>
+                          </span>
+            
+                        </td>
+                        <td>{{item.sell_price * item.count}}</td>
+                        <td>
+                          <button class="btn btn-danger" (click)="removeItemFromTable(item)">
+                            <i class="nb-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              
+                </nb-card-body>
+          </nb-card>
+    </div>
+    <div class="col-4">
+        <nb-card accent="danger" >
+            <nb-card-header>
+                <div class="text-center title-header">
+                    <h3> معلومات </h3>
+                </div>
+            
+            </nb-card-header>
+              <nb-card-body>
+           
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <span class="info-item badge badge-info">رقم الفاتورة</span>
+                      <h4>22</h4>
+                    </div>
+                    <div class="col-12 text-center">
+                      <span class="info-item badge badge-info">التكلفة الكلية</span>
+                      <h4>3000 دينار</h4>
+                    </div>
+                    <div class="col-12 text-center">
+                      <span class="info-item badge badge-info">التاريخ</span>
+                      <h4>2019-23-3</h4>
+                    </div>
+                    <div class="submit-form">
+                      <button type="button" class="btn btn-success">
+                          حفظ الفاتورة
+                      </button>
+                    </div>
+                  </div>
+                </nb-card-body>
+          </nb-card>
+    </div>
+</div>

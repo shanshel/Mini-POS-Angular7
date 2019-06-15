@@ -30,6 +30,12 @@ const routes: Routes = [
     loadChildren: 'app/modules/items/items.module#ItemsModule',
     canActivate: [],
   },
+  {
+    path: 'sell',
+    pathMatch: 'full',
+    loadChildren: 'app/modules/sell/sell.module#SellModule',
+    canActivate: [],
+  },
  
 ];
 

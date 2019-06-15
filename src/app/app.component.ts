@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     this.themeService.changeTheme('corporate');
     this.analytics.trackPageViews();
     this.directionService.setDirection(this.directions.RTL);
-    
+    this._menuItems.buildMenu('any');
     /*
     this._authService.onTokenChange()
     .subscribe((token: NbAuthJWTToken) => {
