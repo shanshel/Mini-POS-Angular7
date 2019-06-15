@@ -64,7 +64,7 @@ export class SellViewComponent implements OnInit {
         this.dropdownList = [];
         this._httpItems.GetItems({search: evt.target.value})
             .subscribe(res => {
-                if (res['data'].length == 1){
+                if (res['data'].length === 1){
                   this.pushToSelected(res['data'][0]);
                   this.dropdownList = [];
                 } else {
@@ -93,7 +93,7 @@ export class SellViewComponent implements OnInit {
 
     removeItemFromTable(item){
       for (let x = 0; x < this.tableItems.length; x++){
-        if (this.tableItems[x].id == item.id){
+        if (this.tableItems[x].id === item.id){
           this.tableItems.splice(x, 1);
         }
       }
@@ -101,7 +101,7 @@ export class SellViewComponent implements OnInit {
     
     oddItemInTable(item) {
       for (let x = 0; x < this.tableItems.length; x++){
-        if (this.tableItems[x].id == item.id){
+        if (this.tableItems[x].id === item.id){
           this.tableItems[x].count -= 1;
           if (this.tableItems[x].count < 1){
             this.removeItemFromTable(item);
@@ -124,7 +124,7 @@ export class SellViewComponent implements OnInit {
       };
 
       for (let x = 0; x < this.tableItems.length; x++){
-        if (this.tableItems[x].id == item.id){
+        if (this.tableItems[x].id === item.id){
           itemExist = true;
           itemIndex = x;
           
