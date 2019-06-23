@@ -1,3 +1,4 @@
+import { CustomerService } from './../../../../core/services/http/customer/customer.service';
 import { Component, OnInit } from '@angular/core';
 import { NbDialogService } from '@nebular/theme';
 import { getTranslate } from '../../../../lang';
@@ -5,6 +6,7 @@ import { BankService } from '../../../../core/services/http/bank/bank.service';
 import { ItemService } from '../../../../core/services/http/item.service';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { CustomValidators } from 'ngx-custom-validators';
+import { InvoiceService } from '../../../../core/services/http/invoice.service';
 @Component({
   selector: 'ngx-sell-view',
   templateUrl: './sell-view.component.html',
@@ -13,17 +15,16 @@ import { CustomValidators } from 'ngx-custom-validators';
 export class SellViewComponent implements OnInit {
   isPaginationNextEmpty = false;
   lastPageInfo;
-  tableActions = [
-    {
-      label: 'تعديل',
-      value: 'edit',
-      icon: 'nb-edit',
-    }
-  ];
+  
+  invoiceInfo = {
+    invoiceNumber: "#",
+    totalPrice: 0,
+    customer_id: -1,
+    payed_amount: -1,
+    date: new Date(),
+  }
 
   items: any[] = [];
-  _form: FormGroup;
-
   dropdownList = [];
   selectedItems = [];
   tableItems = [];
@@ -41,6 +42,24 @@ export class SellViewComponent implements OnInit {
     searchAutofocus: true,
     maxHeight: 500,
   };
+
+  customerDropdownList = [];
+  selectedCustomers = [];
+  customerDropdownSettings = {
+    text: "اختر الزبون",
+    selectAllText: 'تحديد الكل',
+    unSelectAllText: 'الغاء التحديد',
+    classes: "myclass custom-class",
+    primaryKey: "id",
+    labelKey: "name",
+    noDataLabel: "بحث الزبائن",
+    enableSearchFilter: true,
+    searchBy: ['name'],
+    singleSelection: true,
+    searchAutofocus: true,
+    maxHeight: 500,
+  };
+
       
     onItemSelect(item:any){
       this.addItemToTable(item);
@@ -48,12 +67,7 @@ export class SellViewComponent implements OnInit {
     OnItemDeSelect(item:any){
       this.removeItemFromTable(item);
     }
-    onSelectAll(items: any){
-        console.log("test");
-    }
-    onDeSelectAll(items: any){
-        console.log(items);
-    }
+
     isSearchInTimeOut;
     onSearch(evt: any) {
         if (this.isSearchInTimeOut) {
@@ -74,6 +88,26 @@ export class SellViewComponent implements OnInit {
             }, error => {
               this.isSearchInTimeOut = false;
             });
+    }
+
+    onCustomerSelect(customer:any) {
+      console.log(customer);
+    }
+
+    onCustomerSearch(evt: any){
+      if (this.isSearchInTimeOut) {
+        return;
+      }
+
+      this.isSearchInTimeOut = true;
+      this.customerDropdownList = [];
+      this._httpCustomer.getCustomers({search: evt.target.value})
+        .subscribe(res => {
+            this.customerDropdownList = res['data'];
+            this.isSearchInTimeOut = false;
+        }, error => {
+          this.isSearchInTimeOut = false;
+        });
     }
 
     pushToSelected(itemToAdd){
@@ -97,6 +131,7 @@ export class SellViewComponent implements OnInit {
           this.tableItems.splice(x, 1);
         }
       }
+      this.calcluteTotalPrice();
     }
     
     oddItemInTable(item) {
@@ -108,6 +143,7 @@ export class SellViewComponent implements OnInit {
           }
         }
       }
+      this.calcluteTotalPrice();
     }
     
     addItemToTable(item){
@@ -139,27 +175,70 @@ export class SellViewComponent implements OnInit {
         this.tableItems.push(newItem);
       }
 
-      console.log(this.tableItems);
+      this.calcluteTotalPrice();
     }
 
     
+    calcluteTotalPrice(){
+      let totalPrice = 0;
+      for (let x = 0; x < this.tableItems.length; x++){
+        totalPrice += this.tableItems[x].sell_price * this.tableItems[x].count;
+      }
+     
+      this.invoiceInfo.totalPrice = totalPrice;
+    }
 
 
   constructor(
     private dialogService: NbDialogService,
+    private _httpInvoice : InvoiceService,
     private _httpItems : ItemService,
-    private fb: FormBuilder,
+    private _httpCustomer: CustomerService,
   ){}
 
   ngOnInit(): void {
-    this.render();
   }
 
-  render() {
 
+  getCustomerName(id){
+    if (id == -1) {
+      return "زبون";
+    }
   }
-  onSubmit(){
-    console.log(this._form);
+
+  submit(){
+
+    //defaults
+    let sendObject : any = {};
+
+    //by default pay all of the invoice
+    if (this.invoiceInfo.payed_amount == -1) {
+      sendObject.payed_amount = this.invoiceInfo.totalPrice;
+    }
+  
+    sendObject.customer_id = this.invoiceInfo.customer_id;
+    sendObject.total_amount = this.invoiceInfo.totalPrice;
+    sendObject.items = [];
+    for (let x = 0; x < this.tableItems.length; x++){
+      sendObject.items[x] = {id: this.tableItems[x].id, count: this.tableItems[x].count};
+    }
+
+    this._httpInvoice.AddInvoice(sendObject).subscribe(res => {
+      this.openNewInvoice();
+    });
+  }
+
+  openNewInvoice(){
+    this.selectedItems = [];
+    this.tableItems = [];
+    this.invoiceInfo = {
+      invoiceNumber: "#",
+      totalPrice: 0,
+      customer_id: -1,
+      payed_amount: -1,
+      date: new Date(),
+    }
+    this.dropdownList = [];
   }
 
 

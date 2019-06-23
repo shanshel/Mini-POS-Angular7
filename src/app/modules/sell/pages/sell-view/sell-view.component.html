@@ -12,9 +12,7 @@
                       <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems" 
                       [settings]="dropdownSettings" 
                       (onSelect)="onItemSelect($event)" 
-                      (onDeSelect)="OnItemDeSelect($event)"
-                      (onSelectAll)="onSelectAll($event)"
-                      (onDeSelectAll)="onDeSelectAll($event)">
+                      (onDeSelect)="OnItemDeSelect($event)">
           
                       <c-search>
                           <ng-template>
@@ -82,19 +80,36 @@
            
                   <div class="row">
                     <div class="col-12 text-center">
+                      <span class="info-item badge badge-info">الزبون</span>
+                      <angular2-multiselect [data]="customerDropdownList" [(ngModel)]="selectedCustomers" 
+                          [settings]="customerDropdownSettings" 
+                          (onSelect)="onCustomerSelect($event)">
+                          <c-search>
+                              <ng-template>
+                                  <input type="text" (keyup)="onCustomerSearch($event)" placeholder="بحث في الزبائن" style="border: none;width: 100%; height: 100%;outline: none;"/>
+                              </ng-template>
+                          </c-search>
+                          <c-item>
+                              <ng-template let-item="item">
+                                  <label style="color: #333;width: 150px;">{{item.name}}</label>
+                              </ng-template>
+                          </c-item>
+                      </angular2-multiselect>
+                    </div>
+                    <div class="col-12 text-center">
                       <span class="info-item badge badge-info">رقم الفاتورة</span>
-                      <h4>22</h4>
+                      <h4>{{invoiceInfo.invoiceNumber}}</h4>
                     </div>
                     <div class="col-12 text-center">
                       <span class="info-item badge badge-info">التكلفة الكلية</span>
-                      <h4>3000 دينار</h4>
+                      <h4>{{invoiceInfo.totalPrice}}</h4>
                     </div>
                     <div class="col-12 text-center">
                       <span class="info-item badge badge-info">التاريخ</span>
-                      <h4>2019-23-3</h4>
+                      <h4>{{invoiceInfo.date | date}} </h4>
                     </div>
                     <div class="submit-form">
-                      <button type="button" class="btn btn-success">
+                      <button type="button" (click)="submit()" class="btn btn-success">
                           حفظ الفاتورة
                       </button>
                     </div>

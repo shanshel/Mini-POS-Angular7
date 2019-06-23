@@ -41,22 +41,20 @@ export class InvoiceCreateComponent implements OnInit {
     }
     onSelectAll(items: any){
         console.log("test");
-
     }
     onDeSelectAll(items: any){
         console.log(items);
     }
 
-  onSearch(evt: any) {
-      //
-      this.dropdownList = [];
-      this._httpCustomer.getCustomers({search: evt.target.value})
-          .subscribe(res => {
-              this.dropdownList = res['data'];
-          }, error => {
+    onSearch(evt: any) {
+        this.dropdownList = [];
+        this._httpCustomer.getCustomers({search: evt.target.value})
+            .subscribe(res => {
+                this.dropdownList = res['data'];
+            }, error => {
 
-          });
-  }
+            });
+    }
 
   constructor(
     private fb: FormBuilder,
