@@ -19,10 +19,9 @@ export class SellViewComponent implements OnInit {
   invoiceInfo = {
     invoiceNumber: "#",
     totalPrice: 0,
-    customer_id: -1,
     payed_amount: -1,
     date: new Date(),
-  }
+  };
 
   items: any[] = [];
   dropdownList = [];
@@ -201,7 +200,7 @@ export class SellViewComponent implements OnInit {
 
 
   getCustomerName(id){
-    if (id == -1) {
+    if (id === -1) {
       return "زبون";
     }
   }
@@ -212,11 +211,16 @@ export class SellViewComponent implements OnInit {
     let sendObject : any = {};
 
     //by default pay all of the invoice
-    if (this.invoiceInfo.payed_amount == -1) {
+    if (this.invoiceInfo.payed_amount === -1) {
       sendObject.payed_amount = this.invoiceInfo.totalPrice;
     }
   
-    sendObject.customer_id = this.invoiceInfo.customer_id;
+    if (this.selectedCustomers.length === 0) {
+      sendObject.customer_id = -1;
+    } else {
+      sendObject.customer_id = this.selectedCustomers[0];
+    }
+
     sendObject.total_amount = this.invoiceInfo.totalPrice;
     sendObject.items = [];
     for (let x = 0; x < this.tableItems.length; x++){
@@ -231,13 +235,13 @@ export class SellViewComponent implements OnInit {
   openNewInvoice(){
     this.selectedItems = [];
     this.tableItems = [];
+    this.selectedCustomers = [];
     this.invoiceInfo = {
       invoiceNumber: "#",
       totalPrice: 0,
-      customer_id: -1,
       payed_amount: -1,
       date: new Date(),
-    }
+    };
     this.dropdownList = [];
   }
 
