@@ -97,8 +97,18 @@
                       </angular2-multiselect>
                     </div>
                     <div class="col-12 text-center">
-                      <span class="info-item badge badge-info">رقم الفاتورة</span>
-                      <h4>{{invoiceInfo.invoiceNumber}}</h4>
+                      <form [formGroup]="_reciptForm" (ngSubmit)="loadInvoice()">
+                        <div>
+                            <span class="info-item badge badge-info">رقم الفاتورة</span>
+                        </div>
+                         <div>
+                            <span class="button-nextprev-icon" (click)="loadPrevInvoice()"> <i class="ion-chevron-right"></i>  </span>
+                            <input width="100px" type="number" min="0" placeholder="#" nbInput formControlName="id">
+                            <span (click)="loadNextInvoice()" class="button-nextprev-icon" > <i class="ion-chevron-left"></i>  </span>
+                         </div>
+                      
+                          
+                      </form>
                     </div>
                     <div class="col-12 text-center">
                       <span class="info-item badge badge-info">التكلفة الكلية</span>
@@ -109,9 +119,12 @@
                       <h4>{{invoiceInfo.date | date}} </h4>
                     </div>
                     <div class="submit-form">
-                      <button type="button" (click)="submit()" class="btn btn-success">
+                      <button *ngIf="_reciptForm.value.id === ''" type="button" (click)="submit()" class="btn btn-success">
                           حفظ الفاتورة
                       </button>
+                      <button *ngIf="_reciptForm.value.id != ''" type="button" (click)="openNewInvoice()" class="btn btn-danger">
+                        فتح فاتورة جديدة
+                    </button>
                     </div>
                   </div>
                 </nb-card-body>

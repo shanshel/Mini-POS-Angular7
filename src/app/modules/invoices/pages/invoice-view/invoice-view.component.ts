@@ -13,11 +13,7 @@ export class InvoiceViewComponent implements OnInit {
   isPaginationNextEmpty = false;
   lastPageInfo;
   tableActions = [
-    {
-      label: 'تعديل',
-      value: 'edit',
-      icon: 'nb-edit',
-    },
+   
   ];
 
   items: any[] = [];

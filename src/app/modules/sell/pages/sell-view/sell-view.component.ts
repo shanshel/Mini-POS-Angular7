@@ -17,7 +17,7 @@ export class SellViewComponent implements OnInit {
   lastPageInfo;
   
   invoiceInfo = {
-    invoiceNumber: "#",
+    invoiceNumber: "",
     totalPrice: 0,
     payed_amount: -1,
     date: new Date(),
@@ -58,6 +58,8 @@ export class SellViewComponent implements OnInit {
     searchAutofocus: true,
     maxHeight: 500,
   };
+
+  _reciptForm;
 
       
     onItemSelect(item:any){
@@ -178,14 +180,36 @@ export class SellViewComponent implements OnInit {
     }
 
     
-    calcluteTotalPrice(){
-      let totalPrice = 0;
-      for (let x = 0; x < this.tableItems.length; x++){
-        totalPrice += this.tableItems[x].sell_price * this.tableItems[x].count;
-      }
-     
-      this.invoiceInfo.totalPrice = totalPrice;
+  calcluteTotalPrice(){
+    let totalPrice = 0;
+    for (let x = 0; x < this.tableItems.length; x++){
+      totalPrice += this.tableItems[x].sell_price * this.tableItems[x].count;
     }
+    
+    this.invoiceInfo.totalPrice = totalPrice;
+  }
+
+  loadInvoice(){
+    this._httpInvoice.GetInvoice(this._reciptForm.value.id).subscribe(res => {
+      this.tableItems = res['invoiceitems'];
+      this.selectedItems = res['invoiceitems'];
+      this._reciptForm.controls.id.setValue(res['id']);
+      this.selectedCustomers = [res['customer']];
+      this.invoiceInfo = {
+        invoiceNumber: "",
+        totalPrice: res['total_amount'],
+        payed_amount: res['payed_amount'],
+        date: new Date(res['created_at']),
+      };
+
+    },
+    err => {
+      this.openNewInvoice();
+    }
+    );
+  }
+
+
 
 
   constructor(
@@ -193,9 +217,17 @@ export class SellViewComponent implements OnInit {
     private _httpInvoice : InvoiceService,
     private _httpItems : ItemService,
     private _httpCustomer: CustomerService,
+    private fb: FormBuilder,
   ){}
 
   ngOnInit(): void {
+    this._reciptForm = this.fb.group({
+      id: new FormControl('', [
+        Validators.required, 
+        CustomValidators.number,
+      ])
+    });
+
   }
 
 
@@ -206,38 +238,47 @@ export class SellViewComponent implements OnInit {
   }
 
   submit(){
-
-    //defaults
     let sendObject : any = {};
+    if (this._reciptForm.value.id === '') {
+      //ADD New Invoice
 
-    //by default pay all of the invoice
-    if (this.invoiceInfo.payed_amount === -1) {
-      sendObject.payed_amount = this.invoiceInfo.totalPrice;
-    }
-  
-    if (this.selectedCustomers.length === 0) {
-      sendObject.customer_id = -1;
-    } else {
-      sendObject.customer_id = this.selectedCustomers[0];
-    }
+      //by default pay all of the invoice
+      if (this.invoiceInfo.payed_amount === -1) {
+        sendObject.payed_amount = this.invoiceInfo.totalPrice;
+      }
 
-    sendObject.total_amount = this.invoiceInfo.totalPrice;
-    sendObject.items = [];
-    for (let x = 0; x < this.tableItems.length; x++){
-      sendObject.items[x] = {id: this.tableItems[x].id, count: this.tableItems[x].count};
-    }
+      if (this.selectedCustomers.length === 0) {
+        sendObject.customer_id = -1;
+      } else {
+        sendObject.customer_id = this.selectedCustomers[0].id;
+      }
 
-    this._httpInvoice.AddInvoice(sendObject).subscribe(res => {
-      this.openNewInvoice();
-    });
+      sendObject.total_amount = this.invoiceInfo.totalPrice;
+      sendObject.items = [];
+      for (let x = 0; x < this.tableItems.length; x++){
+        sendObject.items[x] = {id: this.tableItems[x].id, count: this.tableItems[x].count};
+      }
+
+      this._httpInvoice.AddInvoice(sendObject).subscribe(res => {
+        this.openNewInvoice();
+      });
+    }
+    else {
+      //Edit Envoice
+    }
+    
+    
+
+    
   }
 
   openNewInvoice(){
     this.selectedItems = [];
     this.tableItems = [];
     this.selectedCustomers = [];
+    this._reciptForm.controls.id.setValue("");
     this.invoiceInfo = {
-      invoiceNumber: "#",
+      invoiceNumber: "",
       totalPrice: 0,
       payed_amount: -1,
       date: new Date(),
@@ -245,5 +286,44 @@ export class SellViewComponent implements OnInit {
     this.dropdownList = [];
   }
 
+  loadPrevInvoice(){
+    this._httpInvoice.GetPrevInvoice(this._reciptForm.value.id).subscribe(res => {
+      this.tableItems = res['invoiceitems'];
+      this.selectedItems = res['invoiceitems'];
+      this._reciptForm.controls.id.setValue(res['id']);
+      this.selectedCustomers = [res['customer']];
+      this.invoiceInfo = {
+        invoiceNumber: "",
+        totalPrice: res['total_amount'],
+        payed_amount: res['payed_amount'],
+        date: new Date(res['created_at']),
+      };
+
+    },
+    err => {
+      this.openNewInvoice();
+    }
+    );
+  }
+
+  loadNextInvoice(){
+    this._httpInvoice.GetNextInvoice(this._reciptForm.value.id).subscribe(res => {
+      this.tableItems = res['invoiceitems'];
+      this.selectedItems = res['invoiceitems'];
+      this.selectedCustomers = [res['customer']];
+      this._reciptForm.controls.id.setValue(res['id']);
+      this.invoiceInfo = {
+        invoiceNumber: "",
+        totalPrice: res['total_amount'],
+        payed_amount: res['payed_amount'],
+        date: new Date(res['created_at']),
+      };
+
+    },
+    err => {
+      this.openNewInvoice();
+    }
+    );
+  }
 
 }

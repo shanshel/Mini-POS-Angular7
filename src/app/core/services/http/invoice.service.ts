@@ -16,6 +16,18 @@ export class InvoiceService {
     return this.http.get(`${environment.API_BASE}/Invoices/GetInvoices`, {params: data});
   }
 
+  GetInvoice(id) {
+    return this.http.get(`${environment.API_BASE}/Invoices/${id}/GetInvoice`, {});
+  }
+
+  GetPrevInvoice(id) {
+    return this.http.get(`${environment.API_BASE}/Invoices/${id}/GetPreviousInvoice`, {});
+  }
+
+  GetNextInvoice(id) {
+    return this.http.get(`${environment.API_BASE}/Invoices/${id}/GetNextInvoice`, {});
+  }
+
   AddInvoice(formData) {
     return this.http.post(`${environment.API_BASE}/Invoices/AddInvoice`, formData);
   }

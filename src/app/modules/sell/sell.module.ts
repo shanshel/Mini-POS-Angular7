@@ -2,7 +2,7 @@ import { SellRoutingModule, routedComponents } from './sell-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../shared/shared.module';
-import { NbDialogModule } from '@nebular/theme';
+import { NbDialogModule, NbInputModule } from '@nebular/theme';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 
@@ -17,6 +17,7 @@ import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
     SellRoutingModule,
     NbDialogModule.forChild(),
     AngularMultiSelectModule,
+   
 
 
 
