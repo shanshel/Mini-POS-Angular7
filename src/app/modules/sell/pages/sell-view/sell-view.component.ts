@@ -173,7 +173,7 @@ export class SellViewComponent implements OnInit {
         this.tableItems[itemIndex].count = this.tableItems[itemIndex].count + 1;
       }
       else {
-        this.tableItems.push(newItem);
+        this.tableItems.unshift(newItem);
       }
 
       this.calcluteTotalPrice();

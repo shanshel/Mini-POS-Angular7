@@ -26,6 +26,15 @@
   @include ngx-pace-theme();
 };
 
+@font-face {
+  font-family: Cairo;
+  src: url('assets/fonts/Cairo-Regular.ttf');
+}
+
+*:not(i) {
+  font-family: 'Cairo', sans-serif !important;
+}
+
 html {
   font-size: 15px;
 }
@@ -739,5 +748,13 @@ span {
     right: auto !important;
   }
 }
-
-
+.c-btn {
+  margin: 10px !important;
+  width: auto !important;
+}
+.margin10 {
+  margin: 10px !important;
+}
+.marginbot4rem {
+  margin-bottom: 4rem;
+}

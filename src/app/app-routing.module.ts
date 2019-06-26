@@ -5,7 +5,12 @@ import { LoggedInGuard } from './core/guards/logged-in-guard.service';
 
 const routes: Routes = [
 
-
+  {
+    path: '',
+    pathMatch: 'full',
+    loadChildren: 'app/modules/sell/sell.module#SellModule',
+    canActivate: [],
+  },
 
   {
     path: 'auth',

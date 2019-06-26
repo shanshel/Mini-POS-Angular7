@@ -19,12 +19,12 @@
               <span class="error-span" *ngIf="_form.controls.sell_price.touched && _form.controls.sell_price.invalid">ادخل سعر البيع بشكل صحيح</span>
             </div> 
             <div class="input-group col-12 mb-3">
-              <label>الباركود</label>
+              <label>الباركود (غير مطلوب)</label>
               <input type="text" nbInput fullWidth formControlName="barcode" [status]="_form.controls.barcode.errors && _form.controls.barcode.dirty ? 'danger' : ''">
               <span class="error-span" *ngIf="_form.controls.barcode.touched && _form.controls.barcode.invalid">ادخل الباركود بشكل صحيح او اتركه فارغاً</span>
             </div> 
             <div class="input-group col-12 mb-3">
-              <label>الكمية</label>
+              <label>الكمية (غير مطلوبة)</label>
               <input type="text" nbInput fullWidth formControlName="quantity" [status]="_form.controls.quantity.errors && _form.controls.quantity.dirty ? 'danger' : ''">
               <span class="error-span" *ngIf="_form.controls.quantity.touched && _form.controls.quantity.invalid">ادخل الكمية بشكل صحيح او اتركها فارغة</span>
             </div> 

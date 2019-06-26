@@ -103,7 +103,7 @@
                         </div>
                          <div>
                             <span class="button-nextprev-icon" (click)="loadPrevInvoice()"> <i class="ion-chevron-right"></i>  </span>
-                            <input width="100px" type="number" min="0" placeholder="#" nbInput formControlName="id">
+                            <input class="margin10" width="100px" type="number" min="0" placeholder="#" nbInput formControlName="id">
                             <span (click)="loadNextInvoice()" class="button-nextprev-icon" > <i class="ion-chevron-left"></i>  </span>
                          </div>
                       
@@ -114,18 +114,21 @@
                       <span class="info-item badge badge-info">التكلفة الكلية</span>
                       <h4>{{invoiceInfo.totalPrice}}</h4>
                     </div>
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center marginbot4rem">
                       <span class="info-item badge badge-info">التاريخ</span>
                       <h4>{{invoiceInfo.date | date}} </h4>
                     </div>
-                    <div class="submit-form">
-                      <button *ngIf="_reciptForm.value.id === ''" type="button" (click)="submit()" class="btn btn-success">
-                          حفظ الفاتورة
+                    <div class="col-12 text-center ">
+                      <div class="submit-form">
+                        <button *ngIf="_reciptForm.value.id === ''" type="button" (click)="submit()" class="btn btn-success">
+                            حفظ الفاتورة
+                        </button>
+                        <button *ngIf="_reciptForm.value.id != ''" type="button" (click)="openNewInvoice()" class="btn btn-danger">
+                          فتح فاتورة جديدة
                       </button>
-                      <button *ngIf="_reciptForm.value.id != ''" type="button" (click)="openNewInvoice()" class="btn btn-danger">
-                        فتح فاتورة جديدة
-                    </button>
+                      </div>
                     </div>
+             
                   </div>
                 </nb-card-body>
           </nb-card>
